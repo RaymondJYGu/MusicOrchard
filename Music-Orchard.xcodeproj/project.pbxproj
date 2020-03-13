@@ -16,8 +16,6 @@
 		AFA66B0424118D770002F732 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA66B0224118D770002F732 /* LaunchScreen.storyboard */; };
 		AFA66B0F24118D780002F732 /* MovementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA66B0E24118D780002F732 /* MovementTests.swift */; };
 		AFA66B1A24118D780002F732 /* MovementUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA66B1924118D780002F732 /* MovementUITests.swift */; };
-		AFA66B2D2411A1630002F732 /* bgm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AFA66B2C2411A1630002F732 /* bgm.mp3 */; };
-		AFC1BCA8241AB41000DB9192 /* Dog bark.wav in Resources */ = {isa = PBXBuildFile; fileRef = AFC1BCA7241AB40F00DB9192 /* Dog bark.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +51,6 @@
 		AFA66B1524118D780002F732 /* Music-OrchardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Music-OrchardUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFA66B1924118D780002F732 /* MovementUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementUITests.swift; sourceTree = "<group>"; };
 		AFA66B1B24118D780002F732 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AFA66B2C2411A1630002F732 /* bgm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bgm.mp3; path = ../../../.Trash/bgm.mp3; sourceTree = "<group>"; };
-		AFC1BCA7241AB40F00DB9192 /* Dog bark.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Dog bark.wav"; path = "../../../Library/Containers/com.apple.mail/Data/Library/Mail Downloads/965B2A37-D1BA-4F89-A2E0-F7A8C5E27928/Dog bark.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +85,6 @@
 				AFA66B0D24118D780002F732 /* MovementTests */,
 				AFA66B1824118D780002F732 /* MovementUITests */,
 				AFA66AF124118D750002F732 /* Products */,
-				AFA66B2C2411A1630002F732 /* bgm.mp3 */,
-				AFC1BCA7241AB40F00DB9192 /* Dog bark.wav */,
 			);
 			sourceTree = "<group>";
 		};
@@ -241,12 +235,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFC1BCA8241AB41000DB9192 /* Dog bark.wav in Resources */,
 				AFA66AFF24118D750002F732 /* Main.storyboard in Resources */,
 				AFA66AF624118D750002F732 /* GameScene.sks in Resources */,
 				AFA66B0124118D770002F732 /* Assets.xcassets in Resources */,
 				AFA66B0424118D770002F732 /* LaunchScreen.storyboard in Resources */,
-				AFA66B2D2411A1630002F732 /* bgm.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
