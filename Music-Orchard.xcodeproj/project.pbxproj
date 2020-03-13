@@ -38,7 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AFA66AF024118D750002F732 /* Movement.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movement.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFA66AF024118D750002F732 /* Music-Orchard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Music-Orchard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFA66AF324118D750002F732 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFA66AF524118D750002F732 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		AFA66AF924118D750002F732 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -47,10 +47,10 @@
 		AFA66B0024118D770002F732 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AFA66B0324118D770002F732 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFA66B0524118D770002F732 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AFA66B0A24118D780002F732 /* MovementTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovementTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFA66B0A24118D780002F732 /* Music-OrchardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Music-OrchardTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFA66B0E24118D780002F732 /* MovementTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementTests.swift; sourceTree = "<group>"; };
 		AFA66B1024118D780002F732 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AFA66B1524118D780002F732 /* MovementUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovementUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AFA66B1524118D780002F732 /* Music-OrchardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Music-OrchardUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFA66B1924118D780002F732 /* MovementUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovementUITests.swift; sourceTree = "<group>"; };
 		AFA66B1B24118D780002F732 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFA66B2C2411A1630002F732 /* bgm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = bgm.mp3; path = ../../../.Trash/bgm.mp3; sourceTree = "<group>"; };
@@ -97,9 +97,9 @@
 		AFA66AF124118D750002F732 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AFA66AF024118D750002F732 /* Movement.app */,
-				AFA66B0A24118D780002F732 /* MovementTests.xctest */,
-				AFA66B1524118D780002F732 /* MovementUITests.xctest */,
+				AFA66AF024118D750002F732 /* Music-Orchard.app */,
+				AFA66B0A24118D780002F732 /* Music-OrchardTests.xctest */,
+				AFA66B1524118D780002F732 /* Music-OrchardUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -140,9 +140,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AFA66AEF24118D750002F732 /* Movement */ = {
+		AFA66AEF24118D750002F732 /* Music-Orchard */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AFA66B1E24118D780002F732 /* Build configuration list for PBXNativeTarget "Movement" */;
+			buildConfigurationList = AFA66B1E24118D780002F732 /* Build configuration list for PBXNativeTarget "Music-Orchard" */;
 			buildPhases = (
 				AFA66AEC24118D750002F732 /* Sources */,
 				AFA66AED24118D750002F732 /* Frameworks */,
@@ -152,14 +152,14 @@
 			);
 			dependencies = (
 			);
-			name = Movement;
+			name = "Music-Orchard";
 			productName = Movement;
-			productReference = AFA66AF024118D750002F732 /* Movement.app */;
+			productReference = AFA66AF024118D750002F732 /* Music-Orchard.app */;
 			productType = "com.apple.product-type.application";
 		};
-		AFA66B0924118D780002F732 /* MovementTests */ = {
+		AFA66B0924118D780002F732 /* Music-OrchardTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AFA66B2124118D780002F732 /* Build configuration list for PBXNativeTarget "MovementTests" */;
+			buildConfigurationList = AFA66B2124118D780002F732 /* Build configuration list for PBXNativeTarget "Music-OrchardTests" */;
 			buildPhases = (
 				AFA66B0624118D780002F732 /* Sources */,
 				AFA66B0724118D780002F732 /* Frameworks */,
@@ -170,14 +170,14 @@
 			dependencies = (
 				AFA66B0C24118D780002F732 /* PBXTargetDependency */,
 			);
-			name = MovementTests;
+			name = "Music-OrchardTests";
 			productName = MovementTests;
-			productReference = AFA66B0A24118D780002F732 /* MovementTests.xctest */;
+			productReference = AFA66B0A24118D780002F732 /* Music-OrchardTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		AFA66B1424118D780002F732 /* MovementUITests */ = {
+		AFA66B1424118D780002F732 /* Music-OrchardUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AFA66B2424118D780002F732 /* Build configuration list for PBXNativeTarget "MovementUITests" */;
+			buildConfigurationList = AFA66B2424118D780002F732 /* Build configuration list for PBXNativeTarget "Music-OrchardUITests" */;
 			buildPhases = (
 				AFA66B1124118D780002F732 /* Sources */,
 				AFA66B1224118D780002F732 /* Frameworks */,
@@ -188,9 +188,9 @@
 			dependencies = (
 				AFA66B1724118D780002F732 /* PBXTargetDependency */,
 			);
-			name = MovementUITests;
+			name = "Music-OrchardUITests";
 			productName = MovementUITests;
-			productReference = AFA66B1524118D780002F732 /* MovementUITests.xctest */;
+			productReference = AFA66B1524118D780002F732 /* Music-OrchardUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -216,7 +216,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AFA66AEB24118D750002F732 /* Build configuration list for PBXProject "Movement" */;
+			buildConfigurationList = AFA66AEB24118D750002F732 /* Build configuration list for PBXProject "Music-Orchard" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -229,9 +229,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AFA66AEF24118D750002F732 /* Movement */,
-				AFA66B0924118D780002F732 /* MovementTests */,
-				AFA66B1424118D780002F732 /* MovementUITests */,
+				AFA66AEF24118D750002F732 /* Music-Orchard */,
+				AFA66B0924118D780002F732 /* Music-OrchardTests */,
+				AFA66B1424118D780002F732 /* Music-OrchardUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -298,12 +298,12 @@
 /* Begin PBXTargetDependency section */
 		AFA66B0C24118D780002F732 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AFA66AEF24118D750002F732 /* Movement */;
+			target = AFA66AEF24118D750002F732 /* Music-Orchard */;
 			targetProxy = AFA66B0B24118D780002F732 /* PBXContainerItemProxy */;
 		};
 		AFA66B1724118D780002F732 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = AFA66AEF24118D750002F732 /* Movement */;
+			target = AFA66AEF24118D750002F732 /* Music-Orchard */;
 			targetProxy = AFA66B1624118D780002F732 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -493,7 +493,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Movement.app/Movement";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Music-Orchard.app/Music-Orchard";
 			};
 			name = Debug;
 		};
@@ -514,7 +514,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Movement.app/Movement";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Music-Orchard.app/Music-Orchard";
 			};
 			name = Release;
 		};
@@ -559,7 +559,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AFA66AEB24118D750002F732 /* Build configuration list for PBXProject "Movement" */ = {
+		AFA66AEB24118D750002F732 /* Build configuration list for PBXProject "Music-Orchard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AFA66B1C24118D780002F732 /* Debug */,
@@ -568,7 +568,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AFA66B1E24118D780002F732 /* Build configuration list for PBXNativeTarget "Movement" */ = {
+		AFA66B1E24118D780002F732 /* Build configuration list for PBXNativeTarget "Music-Orchard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AFA66B1F24118D780002F732 /* Debug */,
@@ -577,7 +577,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AFA66B2124118D780002F732 /* Build configuration list for PBXNativeTarget "MovementTests" */ = {
+		AFA66B2124118D780002F732 /* Build configuration list for PBXNativeTarget "Music-OrchardTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AFA66B2224118D780002F732 /* Debug */,
@@ -586,7 +586,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AFA66B2424118D780002F732 /* Build configuration list for PBXNativeTarget "MovementUITests" */ = {
+		AFA66B2424118D780002F732 /* Build configuration list for PBXNativeTarget "Music-OrchardUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AFA66B2524118D780002F732 /* Debug */,
