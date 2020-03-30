@@ -43,26 +43,28 @@ class GameScene: SKScene {
         lemonTree.position = CGPoint(x: frame.midX + 250, y: frame.midY - 100)
         addChild(lemonTree)
         
-        
-        let path = Bundle.main.path(forResource: "bgm.mp3", ofType: nil)!
-        let url = URL(fileURLWithPath: path)
 
-        do {
-            bombSoundEffect = try AVAudioPlayer(contentsOf: url)
-            bombSoundEffect?.play()
-        } catch {
-            // couldn't load file :(
-        }
-        
-        let path2 = Bundle.main.path(forResource: "Dog bark.wav", ofType: nil)!
-        let url2 = URL(fileURLWithPath: path2)
+        // Reenable this once sound files are in the project:
 
-        do {
-            soundEffect = try AVAudioPlayer(contentsOf: url2)
-            soundEffect?.play()
-        } catch {
-            // couldn't load file :(
-        }
+//        let path = Bundle.main.path(forResource: "bgm.mp3", ofType: nil)!
+//        let url = URL(fileURLWithPath: path)
+//
+//        do {
+//            bombSoundEffect = try AVAudioPlayer(contentsOf: url)
+//            bombSoundEffect?.play()
+//        } catch {
+//            // couldn't load file :(
+//        }
+        
+//        let path2 = Bundle.main.path(forResource: "Dog bark.wav", ofType: nil)!
+//        let url2 = URL(fileURLWithPath: path2)
+//
+//        do {
+//            soundEffect = try AVAudioPlayer(contentsOf: url2)
+//            soundEffect?.play()
+//        } catch {
+//            // couldn't load file :(
+//        }
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {

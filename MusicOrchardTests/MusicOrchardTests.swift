@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import Movement
+@testable import MusicOrchard
 
 class MovementTests: XCTestCase {
 
