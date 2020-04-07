@@ -84,9 +84,11 @@ class GameScene: SKScene {
         for touch in touches {
             
             let location = touch.location(in: self)
-            
-            bananaTree.position.x = location.x
-            bananaTree.position.y = location.y
+            if bananaTree.contains(touch.location(in: self)) {
+                bananaTree.position.x = location.x
+                bananaTree.position.y = location.y
+            }
+
         }
     }
     
