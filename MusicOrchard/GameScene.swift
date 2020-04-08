@@ -40,7 +40,7 @@ class GameScene: SKScene {
         self.anchorPoint = CGPoint(x:0.5,y:0.5)
         
         lemonTree = SKSpriteNode(imageNamed: "lemon tree")
-        lemonTree.position = CGPoint(x: frame.midX + 250, y: frame.midY - 100)
+        lemonTree.position = CGPoint(x: frame.midX - 250, y: frame.midY + 100)
         addChild(lemonTree)
 
         // Reenable this once sound files are in the project:
@@ -78,6 +78,26 @@ class GameScene: SKScene {
                 // couldn't load file :(
             }
         }
+        if appleTree.contains(touch.location(in: self)) {
+            let path2 = Bundle.main.path(forResource: "piano-intro.wav", ofType: nil)!
+            let url2 = URL(fileURLWithPath: path2)
+            do {
+                soundEffect = try AVAudioPlayer(contentsOf: url2)
+                soundEffect?.play()
+            } catch {
+                // couldn't load file :(
+            }
+        }
+        if bananaTree.contains(touch.location(in: self)) {
+            let path2 = Bundle.main.path(forResource: "sydance2.wav", ofType: nil)!
+            let url2 = URL(fileURLWithPath: path2)
+            do {
+                soundEffect = try AVAudioPlayer(contentsOf: url2)
+                soundEffect?.play()
+            } catch {
+                // couldn't load file :(
+            }
+        }
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -88,6 +108,14 @@ class GameScene: SKScene {
                 bananaTree.position.x = location.x
                 bananaTree.position.y = location.y
             }
+//            if lemonTree.contains(touch.location(in: self)) {
+//                lemonTree.position.x = location.x
+//                lemonTree.position.y = location.y
+//            }
+//            if appleTree.contains(touch.location(in: self)) {
+//                appleTree.position.x = location.x
+//                appleTree.position.y = location.y
+//            }
 
         }
     }
