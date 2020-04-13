@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AF30DA1E2444C23E008A5BE4 /* Dog bark.wav in Resources */ = {isa = PBXBuildFile; fileRef = AF30DA1D2444C23E008A5BE4 /* Dog bark.wav */; };
 		AF46220E243FD8CB00127AEA /* g-maj.wav in Resources */ = {isa = PBXBuildFile; fileRef = AF46220D243FD8CB00127AEA /* g-maj.wav */; };
 		AF462210243FD8D000127AEA /* trumpetloop02.aiff in Resources */ = {isa = PBXBuildFile; fileRef = AF46220F243FD8D000127AEA /* trumpetloop02.aiff */; };
 		AF462212243FD8D900127AEA /* sydance2.wav in Resources */ = {isa = PBXBuildFile; fileRef = AF462211243FD8D900127AEA /* sydance2.wav */; };
@@ -42,7 +41,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		AF30DA1D2444C23E008A5BE4 /* Dog bark.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "Dog bark.wav"; path = "../Library/Containers/com.apple.mail/Data/Library/Mail Downloads/965B2A37-D1BA-4F89-A2E0-F7A8C5E27928/Dog bark.wav"; sourceTree = "<group>"; };
 		AF46220D243FD8CB00127AEA /* g-maj.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "g-maj.wav"; sourceTree = "<group>"; };
 		AF46220F243FD8D000127AEA /* trumpetloop02.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = trumpetloop02.aiff; sourceTree = "<group>"; };
 		AF462211243FD8D900127AEA /* sydance2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sydance2.wav; sourceTree = "<group>"; };
@@ -97,12 +95,6 @@
 				AFA66B0D24118D780002F732 /* MusicOrchardTests */,
 				AFA66B1824118D780002F732 /* MusicOrchardUITests */,
 				AFA66AF124118D750002F732 /* Products */,
-				AF30DA1D2444C23E008A5BE4 /* Dog bark.wav */,
-				AF46220D243FD8CB00127AEA /* g-maj.wav */,
-				AF46220F243FD8D000127AEA /* trumpetloop02.aiff */,
-				AF462211243FD8D900127AEA /* sydance2.wav */,
-				AF462213243FD8DF00127AEA /* piano-intro.wav */,
-				AF462215243FD8E400127AEA /* bgm.mp3 */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +111,7 @@
 		AFA66AF224118D750002F732 /* MusicOrchard */ = {
 			isa = PBXGroup;
 			children = (
+				C3E3EB5E244502B500D252F5 /* Resources */,
 				AFA66AF324118D750002F732 /* AppDelegate.swift */,
 				AFA66AF524118D750002F732 /* GameScene.sks */,
 				AFA66AF924118D750002F732 /* GameScene.swift */,
@@ -147,6 +140,18 @@
 				AFA66B1B24118D780002F732 /* Info.plist */,
 			);
 			path = MusicOrchardUITests;
+			sourceTree = "<group>";
+		};
+		C3E3EB5E244502B500D252F5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AF46220D243FD8CB00127AEA /* g-maj.wav */,
+				AF46220F243FD8D000127AEA /* trumpetloop02.aiff */,
+				AF462211243FD8D900127AEA /* sydance2.wav */,
+				AF462213243FD8DF00127AEA /* piano-intro.wav */,
+				AF462215243FD8E400127AEA /* bgm.mp3 */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -255,7 +260,6 @@
 			files = (
 				AFA66AFF24118D750002F732 /* Main.storyboard in Resources */,
 				AFA66AF624118D750002F732 /* GameScene.sks in Resources */,
-				AF30DA1E2444C23E008A5BE4 /* Dog bark.wav in Resources */,
 				AFA66B0124118D770002F732 /* Assets.xcassets in Resources */,
 				AF462216243FD8E400127AEA /* bgm.mp3 in Resources */,
 				AF462214243FD8DF00127AEA /* piano-intro.wav in Resources */,

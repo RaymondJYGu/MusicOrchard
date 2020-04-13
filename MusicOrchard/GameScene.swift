@@ -20,7 +20,7 @@ class GameScene: SKScene {
     var appleTree = SKSpriteNode()
     var bananaTree = SKSpriteNode()
     let pianoSound = SKAction.playSoundFileNamed("piano-intro.wav", waitForCompletion: false)
-    let dogSound = SKAction.playSoundFileNamed("Dog bark.wav", waitForCompletion: false)
+    let gMajSound = SKAction.playSoundFileNamed("g-maj.wav", waitForCompletion: false)
     
     override func didMove(to view: SKView) {
         
@@ -54,7 +54,7 @@ class GameScene: SKScene {
         }
         
         if appleTree.contains(touch.location(in: self)) {
-            run(dogSound)
+            run(gMajSound)
         }
         
         if bananaTree.contains(touch.location(in: self)) {
