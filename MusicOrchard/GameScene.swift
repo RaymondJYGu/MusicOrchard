@@ -19,8 +19,8 @@ class GameScene: SKScene {
     var lemonTree = SKSpriteNode()
     var appleTree = SKSpriteNode()
     var bananaTree = SKSpriteNode()
-    var bombSoundEffect: AVAudioPlayer?
-    var soundEffect: AVAudioPlayer?
+    let pianoSound = SKAction.playSoundFileNamed("piano-intro.wav", waitForCompletion: false)
+    let dogSound = SKAction.playSoundFileNamed("Dog bark.wav", waitForCompletion: false)
     
     override func didMove(to view: SKView) {
         
@@ -43,60 +43,22 @@ class GameScene: SKScene {
         lemonTree.position = CGPoint(x: frame.midX - 250, y: frame.midY + 100)
         addChild(lemonTree)
 
-        // Reenable this once sound files are in the project:
 
-//        let path = Bundle.main.path(forResource: "bgm.mp3", ofType: nil)!
-//        let url = URL(fileURLWithPath: path)
-//
-//        do {
-//            bombSoundEffect = try AVAudioPlayer(contentsOf: url)
-//            bombSoundEffect?.play()
-//        } catch {
-//            // couldn't load file :(
-//        }
-        
-        let path2 = Bundle.main.path(forResource: "Dog bark.wav", ofType: nil)!
-        let url2 = URL(fileURLWithPath: path2)
-
-        do {
-            soundEffect = try AVAudioPlayer(contentsOf: url2)
-            soundEffect?.play()
-        } catch {
-            // couldn't load file :(
-        }
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch = touches.first!
+        
         if lemonTree.contains(touch.location(in: self)) {
-            let path2 = Bundle.main.path(forResource: "Dog bark.wav", ofType: nil)!
-            let url2 = URL(fileURLWithPath: path2)
-            do {
-                soundEffect = try AVAudioPlayer(contentsOf: url2)
-                soundEffect?.play()
-            } catch {
-                // couldn't load file :(
-            }
+            run(pianoSound)
         }
+        
         if appleTree.contains(touch.location(in: self)) {
-            let path2 = Bundle.main.path(forResource: "piano-intro.wav", ofType: nil)!
-            let url2 = URL(fileURLWithPath: path2)
-            do {
-                soundEffect = try AVAudioPlayer(contentsOf: url2)
-                soundEffect?.play()
-            } catch {
-                // couldn't load file :(
-            }
+            run(dogSound)
         }
+        
         if bananaTree.contains(touch.location(in: self)) {
-            let path2 = Bundle.main.path(forResource: "sydance2.wav", ofType: nil)!
-            let url2 = URL(fileURLWithPath: path2)
-            do {
-                soundEffect = try AVAudioPlayer(contentsOf: url2)
-                soundEffect?.play()
-            } catch {
-                // couldn't load file :(
-            }
+            run(pianoSound)
         }
     }
     
