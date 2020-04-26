@@ -22,8 +22,10 @@ class GameScene: SKScene {
     let pianoSound = SKAction.playSoundFileNamed("piano-intro.wav", waitForCompletion: false)
     let gMajSound = SKAction.playSoundFileNamed("g-maj.wav", waitForCompletion: false)
     
+    var myTree = Tree(filename: "coconutTree", width: 300, height: 300, xPosition: 0, yPosition: 0)
+    var coconut = Fruit(filename: "coconut2", width: 300, height: 300, xPosition: 0, yPosition: 0, musicName: "piano-intro.wav")
+    
     override func didMove(to view: SKView) {
-        
         //foo
         let background = SKSpriteNode (imageNamed: "farm bg")
         background.position = CGPoint(x: frame.midX, y: frame.midY)
@@ -44,6 +46,9 @@ class GameScene: SKScene {
         addChild(lemonTree)
 
 
+        myTree.addFruit(fruit: coconut, width: 1000, height: 1000, xPosition: 0, yPosition: 1000)
+        addChild(myTree.node)
+        myTree.setPosition(xPosition: 100, yPosition: 100)
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -51,6 +56,10 @@ class GameScene: SKScene {
         
         if lemonTree.contains(touch.location(in: self)) {
             run(pianoSound)
+        }
+        
+        if myTree.node.contains(touch.location(in: self)) {
+            coconut.playMusic()
         }
         
         if appleTree.contains(touch.location(in: self)) {
