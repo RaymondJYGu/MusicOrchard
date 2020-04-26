@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		820E8F1C245638310062533A /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820E8F1A245638300062533A /* Fruit.swift */; };
+		820E8F1D245638310062533A /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820E8F1B245638300062533A /* Tree.swift */; };
 		AF46220E243FD8CB00127AEA /* g-maj.wav in Resources */ = {isa = PBXBuildFile; fileRef = AF46220D243FD8CB00127AEA /* g-maj.wav */; };
 		AF462210243FD8D000127AEA /* trumpetloop02.aiff in Resources */ = {isa = PBXBuildFile; fileRef = AF46220F243FD8D000127AEA /* trumpetloop02.aiff */; };
 		AF462212243FD8D900127AEA /* sydance2.wav in Resources */ = {isa = PBXBuildFile; fileRef = AF462211243FD8D900127AEA /* sydance2.wav */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		820E8F1A245638300062533A /* Fruit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
+		820E8F1B245638300062533A /* Tree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
 		AF46220D243FD8CB00127AEA /* g-maj.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "g-maj.wav"; sourceTree = "<group>"; };
 		AF46220F243FD8D000127AEA /* trumpetloop02.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = trumpetloop02.aiff; sourceTree = "<group>"; };
 		AF462211243FD8D900127AEA /* sydance2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sydance2.wav; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 				AFA66AF524118D750002F732 /* GameScene.sks */,
 				AFA66AF924118D750002F732 /* GameScene.swift */,
 				AFA66AFB24118D750002F732 /* GameViewController.swift */,
+				820E8F1B245638300062533A /* Tree.swift */,
+				820E8F1A245638300062533A /* Fruit.swift */,
 				AFA66AFD24118D750002F732 /* Main.storyboard */,
 				AFA66B0024118D770002F732 /* Assets.xcassets */,
 				AFA66B0224118D770002F732 /* LaunchScreen.storyboard */,
@@ -295,6 +301,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				820E8F1D245638310062533A /* Tree.swift in Sources */,
+				820E8F1C245638310062533A /* Fruit.swift in Sources */,
 				AFA66AFA24118D750002F732 /* GameScene.swift in Sources */,
 				AFA66AFC24118D750002F732 /* GameViewController.swift in Sources */,
 				AFA66AF424118D750002F732 /* AppDelegate.swift in Sources */,
