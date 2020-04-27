@@ -27,9 +27,9 @@ class GameScene: SKScene {
     
     
     // playing around with SKAction sequencing
-    let vocalShortA = SKAction.playSoundFileNamed("voice - short a", waitForCompletion: false)
-    let vocalMediumD = SKAction.playSoundFileNamed("voice - medium d", waitForCompletion: false)
-    let vocalMediumG = SKAction.playSoundFileNamed("voice - medium g", waitForCompletion: false)
+    let vocalShortA = SKAction.playSoundFileNamed("voice - short a", waitForCompletion: true)
+    let vocalMediumD = SKAction.playSoundFileNamed("voice - medium d", waitForCompletion: true)
+    let vocalMediumG = SKAction.playSoundFileNamed("voice - medium g", waitForCompletion: true)
     let pause = SKAction.pause()
     let wait = SKAction.wait(forDuration: 1)
     let wait2 = SKAction.wait(forDuration: 2)
@@ -73,14 +73,15 @@ class GameScene: SKScene {
 //            run(gMajSound)
 //        }
         
-        // this works right now!
+        // this works right now! a couple different variations on what sequences could be
         
         if lemonTree.contains(touch.location(in: self)) {
-            run(SKAction.sequence([vocalMediumD, vocalMediumG, wait, vocalShortA]))
+//            run(SKAction.sequence([vocalMediumD, vocalMediumG, wait, vocalShortA]))
+            run(SKAction.sequence([vocalMediumD, wait, vocalMediumD, wait, vocalMediumD]))
         }
-        
         if bananaTree.contains(touch.location(in: self)) {
-            run(SKAction.sequence([vocalShortA, wait, vocalMediumD, wait2, vocalMediumG]))
+//            run(SKAction.sequence([vocalShortA, wait, vocalMediumD, wait2, vocalMediumG]))
+            run(SKAction.sequence([vocalShortA, vocalShortA, wait2, vocalShortA, vocalShortA, wait2, vocalShortA, vocalShortA]))
         }
     }
     
