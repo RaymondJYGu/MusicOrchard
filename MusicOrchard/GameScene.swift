@@ -25,6 +25,15 @@ class GameScene: SKScene {
     var myTree = Tree(filename: "coconutTree", width: 300, height: 300, xPosition: 0, yPosition: 0)
     var coconut = Fruit(filename: "coconut2", width: 300, height: 300, xPosition: 0, yPosition: 0, musicName: "piano-intro.wav")
     
+    
+    // playing around with SKAction sequencing
+    let vocalShortA = SKAction.playSoundFileNamed("voice - short a", waitForCompletion: false)
+    let vocalMediumD = SKAction.playSoundFileNamed("voice - medium d", waitForCompletion: false)
+    let vocalMediumG = SKAction.playSoundFileNamed("voice - medium g", waitForCompletion: false)
+    let pause = SKAction.pause()
+    let wait = SKAction.wait(forDuration: 1)
+    let wait2 = SKAction.wait(forDuration: 2)
+    
     override func didMove(to view: SKView) {
         //foo
         let background = SKSpriteNode (imageNamed: "farm bg")
@@ -45,29 +54,33 @@ class GameScene: SKScene {
         lemonTree.position = CGPoint(x: frame.midX - 250, y: frame.midY + 100)
         addChild(lemonTree)
 
-
         myTree.addFruit(fruit: coconut, width: 1000, height: 1000, xPosition: 0, yPosition: 1000)
         addChild(myTree.node)
         myTree.setPosition(xPosition: 100, yPosition: 100)
+        
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch = touches.first!
         
+//        temporarily commented this out to test SKAction sequencing
+//
+//        if myTree.node.contains(touch.location(in: self)) {
+//            coconut.playMusic()
+//        }
+//
+//        if appleTree.contains(touch.location(in: self)) {
+//            run(gMajSound)
+//        }
+        
+        // this works right now!
+        
         if lemonTree.contains(touch.location(in: self)) {
-            run(pianoSound)
-        }
-        
-        if myTree.node.contains(touch.location(in: self)) {
-            coconut.playMusic()
-        }
-        
-        if appleTree.contains(touch.location(in: self)) {
-            run(gMajSound)
+            run(SKAction.sequence([vocalMediumD, vocalMediumG, wait, vocalShortA]))
         }
         
         if bananaTree.contains(touch.location(in: self)) {
-            run(pianoSound)
+            run(SKAction.sequence([vocalShortA, wait, vocalMediumD, wait2, vocalMediumG]))
         }
     }
     
