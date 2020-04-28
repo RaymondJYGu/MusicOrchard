@@ -68,12 +68,11 @@ class GameScene: SKScene {
 //        if myTree.node.contains(touch.location(in: self)) {
 //            coconut.playMusic()
 //        }
-//
+
+//        this works right now! a couple different variations on what sequences could be
 //        if appleTree.contains(touch.location(in: self)) {
-//            run(gMajSound)
+//            run(SKAction.sequence([vocalMediumG, wait2, vocalMediumG, wait, vocalMediumG]))
 //        }
-        
-        // this works right now! a couple different variations on what sequences could be
         
         if lemonTree.contains(touch.location(in: self)) {
 //            run(SKAction.sequence([vocalMediumD, vocalMediumG, wait, vocalShortA]))

@@ -23,21 +23,21 @@
 		AFA66B0424118D770002F732 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA66B0224118D770002F732 /* LaunchScreen.storyboard */; };
 		AFA66B0F24118D780002F732 /* MusicOrchardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA66B0E24118D780002F732 /* MusicOrchardTests.swift */; };
 		AFA66B1A24118D780002F732 /* MusicOrchardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA66B1924118D780002F732 /* MusicOrchardUITests.swift */; };
-		C31E21C02456A73D00662FF6 /* voice - short e.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31E21B12456A73C00662FF6 /* voice - short e.wav */; };
-		C31E21C12456A73D00662FF6 /* voice - medium g.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31E21B22456A73C00662FF6 /* voice - medium g.wav */; };
-		C31E21C22456A73D00662FF6 /* voice - medium e.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31E21B32456A73C00662FF6 /* voice - medium e.wav */; };
-		C31E21C32456A73D00662FF6 /* voice - medium c.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31E21B42456A73C00662FF6 /* voice - medium c.wav */; };
-		C31E21C42456A73D00662FF6 /* voice - long a.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31E21B52456A73C00662FF6 /* voice - long a.wav */; };
-		C31E21C52456A73D00662FF6 /* voice - short g.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31E21B62456A73C00662FF6 /* voice - short g.wav */; };
-		C31E21C62456A73D00662FF6 /* voice - long e.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31E21B72456A73C00662FF6 /* voice - long e.wav */; };
-		C31E21C72456A73D00662FF6 /* voice - long d.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31E21B82456A73D00662FF6 /* voice - long d.wav */; };
-		C31E21C82456A73D00662FF6 /* voice - medium a.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31E21B92456A73D00662FF6 /* voice - medium a.wav */; };
-		C31E21C92456A73D00662FF6 /* voice - short a.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31E21BA2456A73D00662FF6 /* voice - short a.wav */; };
-		C31E21CA2456A73D00662FF6 /* voice - long g.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31E21BB2456A73D00662FF6 /* voice - long g.wav */; };
-		C31E21CB2456A73D00662FF6 /* voice - long c.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31E21BC2456A73D00662FF6 /* voice - long c.wav */; };
-		C31E21CC2456A73D00662FF6 /* voice - medium d.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31E21BD2456A73D00662FF6 /* voice - medium d.wav */; };
-		C31E21CD2456A73D00662FF6 /* voice - short d.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31E21BE2456A73D00662FF6 /* voice - short d.wav */; };
-		C31E21CE2456A73D00662FF6 /* voice - short c.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31E21BF2456A73D00662FF6 /* voice - short c.wav */; };
+		C3D59ECF2457AC01004CFF34 /* voice - long c.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3D59EC02457AC00004CFF34 /* voice - long c.wav */; };
+		C3D59ED02457AC01004CFF34 /* voice - medium a.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3D59EC12457AC00004CFF34 /* voice - medium a.wav */; };
+		C3D59ED12457AC01004CFF34 /* voice - long a.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3D59EC22457AC01004CFF34 /* voice - long a.wav */; };
+		C3D59ED22457AC01004CFF34 /* voice - medium e.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3D59EC32457AC01004CFF34 /* voice - medium e.wav */; };
+		C3D59ED32457AC01004CFF34 /* voice - long d.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3D59EC42457AC01004CFF34 /* voice - long d.wav */; };
+		C3D59ED42457AC01004CFF34 /* voice - short d.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3D59EC52457AC01004CFF34 /* voice - short d.wav */; };
+		C3D59ED52457AC01004CFF34 /* voice - medium c.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3D59EC62457AC01004CFF34 /* voice - medium c.wav */; };
+		C3D59ED62457AC01004CFF34 /* voice - short e.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3D59EC72457AC01004CFF34 /* voice - short e.wav */; };
+		C3D59ED72457AC01004CFF34 /* voice - short a.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3D59EC82457AC01004CFF34 /* voice - short a.wav */; };
+		C3D59ED82457AC01004CFF34 /* voice - short c.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3D59EC92457AC01004CFF34 /* voice - short c.wav */; };
+		C3D59ED92457AC01004CFF34 /* voice - medium d.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3D59ECA2457AC01004CFF34 /* voice - medium d.wav */; };
+		C3D59EDA2457AC01004CFF34 /* voice - long e.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3D59ECB2457AC01004CFF34 /* voice - long e.wav */; };
+		C3D59EDB2457AC01004CFF34 /* voice - long g.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3D59ECC2457AC01004CFF34 /* voice - long g.wav */; };
+		C3D59EDC2457AC01004CFF34 /* voice - short g.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3D59ECD2457AC01004CFF34 /* voice - short g.wav */; };
+		C3D59EDD2457AC01004CFF34 /* voice - medium g.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3D59ECE2457AC01004CFF34 /* voice - medium g.wav */; };
 		DA4C2EFA24538AAD007D7D26 /* starting page.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DA4C2EF924538AAD007D7D26 /* starting page.jpg */; };
 /* End PBXBuildFile section */
 
@@ -81,21 +81,21 @@
 		AFA66B1524118D780002F732 /* MusicOrchardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicOrchardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFA66B1924118D780002F732 /* MusicOrchardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicOrchardUITests.swift; sourceTree = "<group>"; };
 		AFA66B1B24118D780002F732 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C31E21B12456A73C00662FF6 /* voice - short e.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "voice - short e.wav"; path = "../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/MusicOrchard Sounds/voice - short e.wav"; sourceTree = "<group>"; };
-		C31E21B22456A73C00662FF6 /* voice - medium g.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "voice - medium g.wav"; path = "../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/MusicOrchard Sounds/voice - medium g.wav"; sourceTree = "<group>"; };
-		C31E21B32456A73C00662FF6 /* voice - medium e.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "voice - medium e.wav"; path = "../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/MusicOrchard Sounds/voice - medium e.wav"; sourceTree = "<group>"; };
-		C31E21B42456A73C00662FF6 /* voice - medium c.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "voice - medium c.wav"; path = "../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/MusicOrchard Sounds/voice - medium c.wav"; sourceTree = "<group>"; };
-		C31E21B52456A73C00662FF6 /* voice - long a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "voice - long a.wav"; path = "../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/MusicOrchard Sounds/voice - long a.wav"; sourceTree = "<group>"; };
-		C31E21B62456A73C00662FF6 /* voice - short g.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "voice - short g.wav"; path = "../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/MusicOrchard Sounds/voice - short g.wav"; sourceTree = "<group>"; };
-		C31E21B72456A73C00662FF6 /* voice - long e.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "voice - long e.wav"; path = "../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/MusicOrchard Sounds/voice - long e.wav"; sourceTree = "<group>"; };
-		C31E21B82456A73D00662FF6 /* voice - long d.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "voice - long d.wav"; path = "../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/MusicOrchard Sounds/voice - long d.wav"; sourceTree = "<group>"; };
-		C31E21B92456A73D00662FF6 /* voice - medium a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "voice - medium a.wav"; path = "../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/MusicOrchard Sounds/voice - medium a.wav"; sourceTree = "<group>"; };
-		C31E21BA2456A73D00662FF6 /* voice - short a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "voice - short a.wav"; path = "../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/MusicOrchard Sounds/voice - short a.wav"; sourceTree = "<group>"; };
-		C31E21BB2456A73D00662FF6 /* voice - long g.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "voice - long g.wav"; path = "../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/MusicOrchard Sounds/voice - long g.wav"; sourceTree = "<group>"; };
-		C31E21BC2456A73D00662FF6 /* voice - long c.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "voice - long c.wav"; path = "../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/MusicOrchard Sounds/voice - long c.wav"; sourceTree = "<group>"; };
-		C31E21BD2456A73D00662FF6 /* voice - medium d.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "voice - medium d.wav"; path = "../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/MusicOrchard Sounds/voice - medium d.wav"; sourceTree = "<group>"; };
-		C31E21BE2456A73D00662FF6 /* voice - short d.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "voice - short d.wav"; path = "../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/MusicOrchard Sounds/voice - short d.wav"; sourceTree = "<group>"; };
-		C31E21BF2456A73D00662FF6 /* voice - short c.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "voice - short c.wav"; path = "../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/MusicOrchard Sounds/voice - short c.wav"; sourceTree = "<group>"; };
+		C3D59EC02457AC00004CFF34 /* voice - long c.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "voice - long c.wav"; sourceTree = "<group>"; };
+		C3D59EC12457AC00004CFF34 /* voice - medium a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "voice - medium a.wav"; sourceTree = "<group>"; };
+		C3D59EC22457AC01004CFF34 /* voice - long a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "voice - long a.wav"; sourceTree = "<group>"; };
+		C3D59EC32457AC01004CFF34 /* voice - medium e.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "voice - medium e.wav"; sourceTree = "<group>"; };
+		C3D59EC42457AC01004CFF34 /* voice - long d.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "voice - long d.wav"; sourceTree = "<group>"; };
+		C3D59EC52457AC01004CFF34 /* voice - short d.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "voice - short d.wav"; sourceTree = "<group>"; };
+		C3D59EC62457AC01004CFF34 /* voice - medium c.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "voice - medium c.wav"; sourceTree = "<group>"; };
+		C3D59EC72457AC01004CFF34 /* voice - short e.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "voice - short e.wav"; sourceTree = "<group>"; };
+		C3D59EC82457AC01004CFF34 /* voice - short a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "voice - short a.wav"; sourceTree = "<group>"; };
+		C3D59EC92457AC01004CFF34 /* voice - short c.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "voice - short c.wav"; sourceTree = "<group>"; };
+		C3D59ECA2457AC01004CFF34 /* voice - medium d.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "voice - medium d.wav"; sourceTree = "<group>"; };
+		C3D59ECB2457AC01004CFF34 /* voice - long e.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "voice - long e.wav"; sourceTree = "<group>"; };
+		C3D59ECC2457AC01004CFF34 /* voice - long g.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "voice - long g.wav"; sourceTree = "<group>"; };
+		C3D59ECD2457AC01004CFF34 /* voice - short g.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "voice - short g.wav"; sourceTree = "<group>"; };
+		C3D59ECE2457AC01004CFF34 /* voice - medium g.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "voice - medium g.wav"; sourceTree = "<group>"; };
 		DA4C2EF924538AAD007D7D26 /* starting page.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "starting page.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -183,21 +183,21 @@
 		C31E219224569DA100662FF6 /* Voice Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				C31E21B52456A73C00662FF6 /* voice - long a.wav */,
-				C31E21BC2456A73D00662FF6 /* voice - long c.wav */,
-				C31E21B82456A73D00662FF6 /* voice - long d.wav */,
-				C31E21B72456A73C00662FF6 /* voice - long e.wav */,
-				C31E21BB2456A73D00662FF6 /* voice - long g.wav */,
-				C31E21B92456A73D00662FF6 /* voice - medium a.wav */,
-				C31E21B42456A73C00662FF6 /* voice - medium c.wav */,
-				C31E21BD2456A73D00662FF6 /* voice - medium d.wav */,
-				C31E21B32456A73C00662FF6 /* voice - medium e.wav */,
-				C31E21B22456A73C00662FF6 /* voice - medium g.wav */,
-				C31E21BA2456A73D00662FF6 /* voice - short a.wav */,
-				C31E21BF2456A73D00662FF6 /* voice - short c.wav */,
-				C31E21BE2456A73D00662FF6 /* voice - short d.wav */,
-				C31E21B12456A73C00662FF6 /* voice - short e.wav */,
-				C31E21B62456A73C00662FF6 /* voice - short g.wav */,
+				C3D59EC22457AC01004CFF34 /* voice - long a.wav */,
+				C3D59EC02457AC00004CFF34 /* voice - long c.wav */,
+				C3D59EC42457AC01004CFF34 /* voice - long d.wav */,
+				C3D59ECB2457AC01004CFF34 /* voice - long e.wav */,
+				C3D59ECC2457AC01004CFF34 /* voice - long g.wav */,
+				C3D59EC12457AC00004CFF34 /* voice - medium a.wav */,
+				C3D59EC62457AC01004CFF34 /* voice - medium c.wav */,
+				C3D59ECA2457AC01004CFF34 /* voice - medium d.wav */,
+				C3D59EC32457AC01004CFF34 /* voice - medium e.wav */,
+				C3D59ECE2457AC01004CFF34 /* voice - medium g.wav */,
+				C3D59EC82457AC01004CFF34 /* voice - short a.wav */,
+				C3D59EC92457AC01004CFF34 /* voice - short c.wav */,
+				C3D59EC52457AC01004CFF34 /* voice - short d.wav */,
+				C3D59EC72457AC01004CFF34 /* voice - short e.wav */,
+				C3D59ECD2457AC01004CFF34 /* voice - short g.wav */,
 			);
 			path = "Voice Sounds";
 			sourceTree = "<group>";
@@ -320,31 +320,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3D59EDA2457AC01004CFF34 /* voice - long e.wav in Resources */,
 				AFA66AFF24118D750002F732 /* Main.storyboard in Resources */,
+				C3D59ED22457AC01004CFF34 /* voice - medium e.wav in Resources */,
 				AFA66AF624118D750002F732 /* GameScene.sks in Resources */,
+				C3D59ED62457AC01004CFF34 /* voice - short e.wav in Resources */,
 				AFA66B0124118D770002F732 /* Assets.xcassets in Resources */,
-				C31E21CA2456A73D00662FF6 /* voice - long g.wav in Resources */,
-				C31E21C12456A73D00662FF6 /* voice - medium g.wav in Resources */,
 				AF462216243FD8E400127AEA /* bgm.mp3 in Resources */,
-				C31E21CD2456A73D00662FF6 /* voice - short d.wav in Resources */,
+				C3D59EDB2457AC01004CFF34 /* voice - long g.wav in Resources */,
 				AF462214243FD8DF00127AEA /* piano-intro.wav in Resources */,
-				C31E21CC2456A73D00662FF6 /* voice - medium d.wav in Resources */,
-				C31E21C42456A73D00662FF6 /* voice - long a.wav in Resources */,
-				C31E21C02456A73D00662FF6 /* voice - short e.wav in Resources */,
-				C31E21C32456A73D00662FF6 /* voice - medium c.wav in Resources */,
-				C31E21C72456A73D00662FF6 /* voice - long d.wav in Resources */,
-				C31E21C82456A73D00662FF6 /* voice - medium a.wav in Resources */,
-				C31E21C92456A73D00662FF6 /* voice - short a.wav in Resources */,
-				C31E21C62456A73D00662FF6 /* voice - long e.wav in Resources */,
-				C31E21C52456A73D00662FF6 /* voice - short g.wav in Resources */,
+				C3D59EDC2457AC01004CFF34 /* voice - short g.wav in Resources */,
+				C3D59ED42457AC01004CFF34 /* voice - short d.wav in Resources */,
+				C3D59EDD2457AC01004CFF34 /* voice - medium g.wav in Resources */,
+				C3D59ED32457AC01004CFF34 /* voice - long d.wav in Resources */,
+				C3D59ED82457AC01004CFF34 /* voice - short c.wav in Resources */,
 				DA4C2EFA24538AAD007D7D26 /* starting page.jpg in Resources */,
+				C3D59ED72457AC01004CFF34 /* voice - short a.wav in Resources */,
 				AF46220E243FD8CB00127AEA /* g-maj.wav in Resources */,
 				AF462212243FD8D900127AEA /* sydance2.wav in Resources */,
-				C31E21C22456A73D00662FF6 /* voice - medium e.wav in Resources */,
+				C3D59ED52457AC01004CFF34 /* voice - medium c.wav in Resources */,
+				C3D59ED12457AC01004CFF34 /* voice - long a.wav in Resources */,
 				AFA66B0424118D770002F732 /* LaunchScreen.storyboard in Resources */,
-				C31E21CB2456A73D00662FF6 /* voice - long c.wav in Resources */,
+				C3D59ED02457AC01004CFF34 /* voice - medium a.wav in Resources */,
+				C3D59ED92457AC01004CFF34 /* voice - medium d.wav in Resources */,
+				C3D59ECF2457AC01004CFF34 /* voice - long c.wav in Resources */,
 				AF462210243FD8D000127AEA /* trumpetloop02.aiff in Resources */,
-				C31E21CE2456A73D00662FF6 /* voice - short c.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
