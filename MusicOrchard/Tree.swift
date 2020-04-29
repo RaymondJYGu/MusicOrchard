@@ -44,23 +44,20 @@ class Tree {
     }
     
     func addFruit(fruit: Fruit) {
-        let number = Int.random(in: 1...4)
+        let number = Int.random(in: 1...5)
         fruit.setSize(width: 1000, height: 750)
-        fruit.setPosition(xPosition: Double(-300 + (100 * number)), yPosition: -50)
+        fruit.setPosition(xPosition: Double(-650 + (200 * number)), yPosition: -75)
         fruit.getNode().zPosition = getNode().zPosition + 1
         node.addChild(fruit.getNode())
         fruits.append(fruit)
     }
     
-    func deleteFruit(fruit: Fruit) {
-        fruits.remove(at: 0)
-        node.removeAllChildren()
+    func deleteFruit(fruit: Fruit, number: Int) {
+        fruits.remove(at: number)
+        node.removeChildren(in: [fruit.node])
         addFruit(fruit: fruit)
     }
     
-    func getFruit() -> Fruit {
-        return fruits[0]
-    }
     
     func setSize(width: Double, height: Double) {
         node.scale(to: CGSize(width: width, height: height))

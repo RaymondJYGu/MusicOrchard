@@ -23,7 +23,8 @@ class GameScene: SKScene {
     let gMajSound = SKAction.playSoundFileNamed("g-maj.wav", waitForCompletion: false)
     
     var myTree = Tree(filename: "coconutTree", width: 300, height: 300, xPosition: 0, yPosition: 0)
-    var coconut = Fruit(filename: "coconut2", width: 300, height: 300, xPosition: 0, yPosition: 0, musicName: "piano-intro.wav")
+    var coconut = Fruit(filename: "coconut2", width: 300, height: 300, xPosition: 0, yPosition: 0, musicName: "cello - medium a.wav")
+    var coconut2 = Fruit(filename: "coconut2", width: 300, height: 300, xPosition: 0, yPosition: 0, musicName: "cello - medium c.wav")
     
     
     // playing around with SKAction sequencing
@@ -56,6 +57,7 @@ class GameScene: SKScene {
         addChild(lemonTree)
 
         myTree.addFruit(fruit: coconut)
+        myTree.addFruit(fruit: coconut2)
         addChild(myTree.node)
         myTree.setPosition(xPosition: 100, yPosition: 100)
         
@@ -64,8 +66,13 @@ class GameScene: SKScene {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch = touches.first!
         
-        if myTree.node.contains(touch.location(in: coconut.node)) {
-            myTree.deleteFruit(fruit: myTree.getFruit())
+        if myTree.node.contains(touch.location(in: coconut.node) ) {
+            coconut.playMusic()
+            myTree.deleteFruit(fruit: coconut, number: 0)
+        }
+        if myTree.node.contains(touch.location(in: coconut2.node) ) {
+            coconut2.playMusic()
+            myTree.deleteFruit(fruit: coconut2, number: 1)
         }
 //        temporarily commented this out to test SKAction sequencing
 //
