@@ -16,15 +16,16 @@ class BG: SKSpriteNode{ }
 
 class GameScene: SKScene {
     
+    //declare all variables
+    var HomeButton = SKSpriteNode()
     var lemonTree = SKSpriteNode()
     var appleTree = SKSpriteNode()
     var bananaTree = SKSpriteNode()
     let pianoSound = SKAction.playSoundFileNamed("piano-intro.wav", waitForCompletion: false)
     let gMajSound = SKAction.playSoundFileNamed("g-maj.wav", waitForCompletion: false)
-    
-    var myTree = Tree(filename: "coconutTree", width: 300, height: 300, xPosition: 0, yPosition: 0)
-    var coconut = Fruit(filename: "coconut2", width: 300, height: 300, xPosition: 0, yPosition: 0, musicName: "cello - medium a.wav")
-    var coconut2 = Fruit(filename: "coconut2", width: 300, height: 300, xPosition: 0, yPosition: 0, musicName: "cello - medium c.wav")
+    var coconutTree = Tree(filename: "coconutTree", width: 300, height: 300, xPosition: 0, yPosition: 0)
+    var coconut = Fruit(filename: "coconut", width: 300, height: 300, xPosition: 0, yPosition: 0, musicName: "cello - medium a.wav")
+    var coconut2 = Fruit(filename: "coconut", width: 300, height: 300, xPosition: 0, yPosition: 0, musicName: "cello - medium c.wav")
     
     
     // playing around with SKAction sequencing
@@ -43,36 +44,40 @@ class GameScene: SKScene {
         background.zPosition = -1
         addChild(background)
         
-        appleTree = SKSpriteNode(imageNamed: "apple tree")
-        appleTree.position = CGPoint(x: frame.midX + 400, y: frame.midY - 200)
+        appleTree = SKSpriteNode(imageNamed: "appleTree")
+        appleTree.position = CGPoint(x: frame.midX + 400, y: frame.midY - 180)
+        appleTree.setScale(0.25)
         addChild(appleTree)
         
-        bananaTree = SKSpriteNode(imageNamed: "banana tree")
-        bananaTree.position = CGPoint(x: frame.midX + 100, y: frame.midY - 200)
+        bananaTree = SKSpriteNode(imageNamed: "bananaTree")
+        bananaTree.position = CGPoint(x: frame.midX + 50, y: frame.midY - 150)
+        bananaTree.setScale(0.25)
         addChild(bananaTree)
         self.anchorPoint = CGPoint(x:0.5,y:0.5)
         
-        lemonTree = SKSpriteNode(imageNamed: "lemon tree")
-        lemonTree.position = CGPoint(x: frame.midX - 250, y: frame.midY + 100)
+        lemonTree = SKSpriteNode(imageNamed: "lemonTree")
+        lemonTree.position = CGPoint(x: frame.midX - 400, y: frame.midY + 100)
+        lemonTree.setScale(0.25)
         addChild(lemonTree)
 
-        myTree.addFruit(fruit: coconut)
-        myTree.addFruit(fruit: coconut2)
-        addChild(myTree.node)
-        myTree.setPosition(xPosition: 100, yPosition: 100)
+        coconutTree.addFruit(fruit: coconut)
+        coconutTree.addFruit(fruit: coconut2)
+        coconutTree.node.setScale(0.25)
+        addChild(coconutTree.node)
+        coconutTree.setPosition(xPosition: 300, yPosition: 100)
         
     }
 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch = touches.first!
         
-        if myTree.node.contains(touch.location(in: coconut.node) ) {
+        if coconutTree.node.contains(touch.location(in: coconut.node) ) {
             coconut.playMusic()
-            myTree.deleteFruit(fruit: coconut, number: 0)
+            coconutTree.deleteFruit(fruit: coconut, number: 0)
         }
-        if myTree.node.contains(touch.location(in: coconut2.node) ) {
+        if coconutTree.node.contains(touch.location(in: coconut2.node) ) {
             coconut2.playMusic()
-            myTree.deleteFruit(fruit: coconut2, number: 1)
+            coconutTree.deleteFruit(fruit: coconut2, number: 1)
         }
 //        temporarily commented this out to test SKAction sequencing
 //
