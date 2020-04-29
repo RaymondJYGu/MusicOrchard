@@ -17,6 +17,7 @@ class Tree {
     var height: Double
     var xPosition: Double
     var yPosition: Double
+    var touches: [Int]
     
     init(filename: String) {
         node = SKSpriteNode(imageNamed: filename)
@@ -26,6 +27,7 @@ class Tree {
         height = 0
         xPosition = 0
         yPosition = 0
+        touches = []
     }
     
     init(filename: String, width: Double, height: Double, xPosition: Double, yPosition: Double) {
@@ -36,16 +38,28 @@ class Tree {
         self.height = 0
         self.xPosition = 0
         self.yPosition = 0
+        touches = []
         setSize(width: width, height: height)
         setPosition(xPosition: xPosition, yPosition: yPosition)
     }
     
-    func addFruit(fruit: Fruit, width: Double, height: Double, xPosition: Double, yPosition: Double) {
-        fruit.setSize(width: width, height: height)
-        fruit.setPosition(xPosition: xPosition, yPosition: yPosition)
+    func addFruit(fruit: Fruit) {
+        let number = Int.random(in: 1...4)
+        fruit.setSize(width: 1000, height: 750)
+        fruit.setPosition(xPosition: Double(-300 + (100 * number)), yPosition: -50)
         fruit.getNode().zPosition = getNode().zPosition + 1
         node.addChild(fruit.getNode())
         fruits.append(fruit)
+    }
+    
+    func deleteFruit(fruit: Fruit) {
+        fruits.remove(at: 0)
+        node.removeAllChildren()
+        addFruit(fruit: fruit)
+    }
+    
+    func getFruit() -> Fruit {
+        return fruits[0]
     }
     
     func setSize(width: Double, height: Double) {
