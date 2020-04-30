@@ -27,18 +27,7 @@ class GameScene: SKScene {
     var coconut = Fruit(filename: "coconut", width: 300, height: 300, xPosition: 0, yPosition: 0, musicName: "cello - medium a.wav")
     var coconut2 = Fruit(filename: "coconut", width: 300, height: 300, xPosition: 0, yPosition: 0, musicName: "cello - medium c.wav")
     
-    
-    // playing around with SKAction sequencing
-    let vocalShortA = SKAction.playSoundFileNamed("voice - short a", waitForCompletion: true)
-    let vocalShortD = SKAction.playSoundFileNamed("voice - short d", waitForCompletion: true)
-    let vocalShortG = SKAction.playSoundFileNamed("voice - short g", waitForCompletion: true)
-    let celloShortA = SKAction.playSoundFileNamed("cello - short a", waitForCompletion: true)
-    let celloShortC = SKAction.playSoundFileNamed("cello - short c", waitForCompletion: true)
-    let celloShortE = SKAction.playSoundFileNamed("cello - short e", waitForCompletion: true)
-    let trumpetShortD = SKAction.playSoundFileNamed("trumpet - short d", waitForCompletion: true)
-    let trumpetShortA = SKAction.playSoundFileNamed("trumpet - short a", waitForCompletion: true)
-    let wait = SKAction.wait(forDuration: 1)
-    let wait2 = SKAction.wait(forDuration: 2)
+
     
     override func didMove(to view: SKView) {
         //foo
@@ -88,13 +77,35 @@ class GameScene: SKScene {
 //            coconut.playMusic()
 //        }
 
-//        this works right now! a couple different variations on what sequences could be
-        if appleTree.contains(touch.location(in: self)) {
-            run(SKAction.sequence([vocalShortA, wait, vocalShortD, wait, vocalShortG]))
-        }
+        // playing around with SKAction sequencing
+//        let vocalShortA = SKAction.playSoundFileNamed("voice - short a", waitForCompletion: false)
+//        let vocalShortD = SKAction.playSoundFileNamed("voice - short d", waitForCompletion: false)
+//        let vocalShortG = SKAction.playSoundFileNamed("voice - short g", waitForCompletion: false)
+//        let celloShortA = SKAction.playSoundFileNamed("cello - short a", waitForCompletion: false)
+//        let celloShortC = SKAction.playSoundFileNamed("cello - short c", waitForCompletion: false)
+//        let celloShortE = SKAction.playSoundFileNamed("cello - short e", waitForCompletion: false)
+//        let trumpetShortD = SKAction.playSoundFileNamed("trumpet - short d", waitForCompletion: false)
+//        let trumpetShortA = SKAction.playSoundFileNamed("trumpet - short a", waitForCompletion: false)
+//        let wait = SKAction.wait(forDuration: 1)
+//        let wait2 = SKAction.wait(forDuration: 2)
+        
+        //        this works right now! a couple different variations on what sequences could be
+//        if appleTree.contains(touch.location(in: self)) {
+//            run(
+//                SKAction.repeat(
+//                    SKAction.sequence([
+//                        SKAction.note(instrument: "voice", note: "a", duration: 0.4),
+//                        SKAction.note(instrument: "voice", note: "d", duration: 0.2),
+//                        SKAction.note(instrument: "voice", note: "d", duration: 0.2),
+//                        SKAction.note(instrument: "voice", note: "d", duration: 0.2),
+//                    ]),
+//                    count: 5
+//                )
+//            );
+//        }
         
         if lemonTree.contains(touch.location(in: self)) {
-            run(SKAction.sequence([celloShortA, wait, celloShortC, celloShortC, celloShortE]))
+            run(SKAction.sequence([celloShortA, wait, celloShortC, celloShortE]))
         }
         if bananaTree.contains(touch.location(in: self)) {
             run(SKAction.sequence([trumpetShortA, trumpetShortD, wait, trumpetShortD]))
@@ -106,3 +117,18 @@ class GameScene: SKScene {
     }
 }
 
+extension SKAction {
+    static func note(instrument: String, note: String, duration: TimeInterval) -> SKAction {
+        SKAction.sequence([
+            SKAction.playSoundFileNamed(
+                "\(instrument) - short \(note)",
+                waitForCompletion: false),
+            SKAction.wait(forDuration: duration)
+        ])
+    }
+    
+    // You might end up writing other SKAction music methods like this:
+    //
+    // let appleRhythm = SKAction.rhythm(instrument: "voice", length: 5, pulse: 0.1)
+
+}
