@@ -101,26 +101,6 @@ class GameScene: SKScene {
         }
     }
     
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for touch in touches {
-            
-            let location = touch.location(in: self)
-            if bananaTree.contains(touch.location(in: self)) {
-                bananaTree.position.x = location.x
-                bananaTree.position.y = location.y
-            }
-//            if lemonTree.contains(touch.location(in: self)) {
-//                lemonTree.position.x = location.x
-//                lemonTree.position.y = location.y
-//            }
-//            if appleTree.contains(touch.location(in: self)) {
-//                appleTree.position.x = location.x
-//                appleTree.position.y = location.y
-//            }
-
-        }
-    }
-    
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
     }
