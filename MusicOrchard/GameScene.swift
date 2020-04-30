@@ -29,10 +29,13 @@ class GameScene: SKScene {
     
     // playing around with SKAction sequencing
     let vocalShortA = SKAction.playSoundFileNamed("voice - short a", waitForCompletion: true)
-    let vocalMediumD = SKAction.playSoundFileNamed("voice - medium d", waitForCompletion: true)
-    let vocalMediumG = SKAction.playSoundFileNamed("voice - medium g", waitForCompletion: true)
-    let celloMediumA = SKAction.playSoundFileNamed("cello - medium a", waitForCompletion: true)
-    let pause = SKAction.pause()
+    let vocalShortD = SKAction.playSoundFileNamed("voice - short d", waitForCompletion: true)
+    let vocalShortG = SKAction.playSoundFileNamed("voice - short g", waitForCompletion: true)
+    let celloShortA = SKAction.playSoundFileNamed("cello - short a", waitForCompletion: true)
+    let celloShortC = SKAction.playSoundFileNamed("cello - short c", waitForCompletion: true)
+    let celloShortE = SKAction.playSoundFileNamed("cello - short e", waitForCompletion: true)
+    let trumpetShortD = SKAction.playSoundFileNamed("trumpet - short d", waitForCompletion: true)
+    let trumpetShortA = SKAction.playSoundFileNamed("trumpet - short a", waitForCompletion: true)
     let wait = SKAction.wait(forDuration: 1)
     let wait2 = SKAction.wait(forDuration: 2)
     
@@ -81,17 +84,15 @@ class GameScene: SKScene {
 //        }
 
 //        this works right now! a couple different variations on what sequences could be
-//        if appleTree.contains(touch.location(in: self)) {
-//            run(SKAction.sequence([vocalMediumG, wait2, vocalMediumG, wait, vocalMediumG]))
-//        }
+        if appleTree.contains(touch.location(in: self)) {
+            run(SKAction.sequence([vocalShortA, wait, vocalShortD, wait, vocalShortG]))
+        }
         
         if lemonTree.contains(touch.location(in: self)) {
-//            run(SKAction.sequence([vocalMediumD, vocalMediumG, wait, vocalShortA]))
-            run(SKAction.sequence([celloMediumA, wait, vocalMediumD, wait, vocalMediumD]))
+            run(SKAction.sequence([celloShortA, wait, celloShortC, celloShortC, celloShortE]))
         }
         if bananaTree.contains(touch.location(in: self)) {
-//            run(SKAction.sequence([vocalShortA, wait, vocalMediumD, wait2, vocalMediumG]))
-            run(SKAction.sequence([vocalShortA, vocalShortA, wait2, vocalShortA, vocalShortA, wait2, vocalShortA, vocalShortA]))
+            run(SKAction.sequence([trumpetShortA, trumpetShortD, wait, trumpetShortD]))
         }
     }
     
