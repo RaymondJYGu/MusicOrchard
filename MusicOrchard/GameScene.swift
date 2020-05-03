@@ -96,16 +96,17 @@ class GameScene: SKScene {
         
         if appleTree.node.contains(touch.location(in: apple.node)) {
             run(
-                SKAction.repeat(
-                    SKAction.sequence([
-                        SKAction.note(instrument: "voice", note: "a", duration: 0.4),
-                        SKAction.note(instrument: "voice", note: "d", duration: 0.2),
-                        SKAction.note(instrument: "voice", note: "d", duration: 0.2),
-                        SKAction.note(instrument: "voice", note: "d", duration: 0.2),
-                    ]),
-                    count: 5
+//                SKAction.repeat(
+//                    SKAction.sequence([
+//                        SKAction.note(instrument: "voice", note: "a", duration: 0.4),
+//                        SKAction.note(instrument: "voice", note: "d", duration: 0.2),
+//                        SKAction.note(instrument: "voice", note: "d", duration: 0.2),
+//                        SKAction.note(instrument: "voice", note: "d", duration: 0.2),
+//                    ]),
+//                    count: 5
+                Rhythm.generateRandomRhythm(numOfNotes: 5)
                 )
-            );
+//            );
             appleTree.deleteFruit(fruit: apple, number: 0)
         }
     }
@@ -115,15 +116,7 @@ class GameScene: SKScene {
     }
 }
 
-extension SKAction {
-    static func note(instrument: String, note: String, duration: TimeInterval) -> SKAction {
-        SKAction.sequence([
-            SKAction.playSoundFileNamed(
-                "\(instrument) - short \(note)",
-                waitForCompletion: false),
-            SKAction.wait(forDuration: duration)
-        ])
-    }
+
     
     // You might end up writing other SKAction music methods like this:
     //
