@@ -22,26 +22,22 @@ class Rhythm {
         ])
     }
     
-    static func randomNote() -> SKAction {
-        let instrument = instruments[Int.random(in: 0...4)]
+    static func randomNote(instrument: String) -> SKAction {
         let length = lengths[Int.random(in: 0...1)]
         let note = notes[Int.random(in: 0...4)]
-        let duration = TimeInterval(Int.random(in: 0...4)/10)
+        let duration = TimeInterval(Int.random(in: 0...2)/10)
         return SKAction.sequence([
             SKAction.playSoundFileNamed("\(instrument) - \(length) \(note).wav", waitForCompletion: true),
             SKAction.wait(forDuration: duration)
         ])
     }
     
-    static func generateRandomRhythm(numOfNotes: Int) -> SKAction {
+    static func generateRandomRhythm(instrument: String, numOfNotes: Int) -> SKAction {
         var randomRhythm = SKAction()
         for _ in 1...numOfNotes {
-            randomRhythm = addNoteToSequence(note: randomNote(), sequence: randomRhythm)
+            randomRhythm = SKAction.sequence([randomRhythm, randomNote(instrument: instrument)])
         }
         return randomRhythm
     }
     
-    static func addNoteToSequence(note: SKAction, sequence: SKAction) -> SKAction {
-        SKAction.sequence([sequence, note])
-    }
 }

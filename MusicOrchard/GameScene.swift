@@ -104,7 +104,7 @@ class GameScene: SKScene {
 //                        SKAction.note(instrument: "voice", note: "d", duration: 0.2),
 //                    ]),
 //                    count: 5
-                Rhythm.generateRandomRhythm(numOfNotes: 5)
+                Rhythm.generateRandomRhythm(instrument: "cello", numOfNotes: 5)
                 )
 //            );
             appleTree.deleteFruit(fruit: apple, number: 0)
@@ -122,4 +122,4 @@ class GameScene: SKScene {
     //
     // let appleRhythm = SKAction.rhythm(instrument: "voice", length: 5, pulse: 0.1)
 
-}
+
