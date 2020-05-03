@@ -18,14 +18,27 @@ class GameScene: SKScene {
     
     //declare all variables
     var HomeButton = SKSpriteNode()
-    var lemonTree = SKSpriteNode()
-    var appleTree = SKSpriteNode()
-    var bananaTree = SKSpriteNode()
-    let pianoSound = SKAction.playSoundFileNamed("piano-intro.wav", waitForCompletion: false)
-    let gMajSound = SKAction.playSoundFileNamed("g-maj.wav", waitForCompletion: false)
+    
+    var appleTree = Tree(filename: "appleTree", width: 300, height: 300, xPosition: 0, yPosition: 0)
+    var apple = Fruit(filename: "apple", width: 300, height: 300, xPosition: 0, yPosition: 0, musicName: "cello - medium a.wav")
+    var apple2 = Fruit(filename: "apple", width: 300, height: 300, xPosition: 0, yPosition: 0, musicName: "cello - medium c.wav")
+    
+    var bananaTree = Tree(filename: "bananaTree", width: 300, height: 300, xPosition: 0, yPosition: 0)
+    var banana = Fruit(filename: "banana", width: 300, height: 300, xPosition: 0, yPosition: 0, musicName: "cello - medium a.wav")
+    var banana2 = Fruit(filename: "banana", width: 300, height: 300, xPosition: 0, yPosition: 0, musicName: "cello - medium c.wav")
+    
     var coconutTree = Tree(filename: "coconutTree", width: 300, height: 300, xPosition: 0, yPosition: 0)
     var coconut = Fruit(filename: "coconut", width: 300, height: 300, xPosition: 0, yPosition: 0, musicName: "cello - medium a.wav")
     var coconut2 = Fruit(filename: "coconut", width: 300, height: 300, xPosition: 0, yPosition: 0, musicName: "cello - medium c.wav")
+    
+    var lemonTree = Tree(filename: "coconutTree", width: 300, height: 300, xPosition: 0, yPosition: 0)
+    var lemon = Fruit(filename: "lemon", width: 300, height: 300, xPosition: 0, yPosition: 0, musicName: "cello - medium a.wav")
+    var lemon2 = Fruit(filename: "lemon", width: 300, height: 300, xPosition: 0, yPosition: 0, musicName: "cello - medium c.wav")
+    
+    var peachTree = Tree(filename: "peachTree", width: 300, height: 300, xPosition: 0, yPosition: 0)
+    var peach = Fruit(filename: "peach", width: 300, height: 300, xPosition: 0, yPosition: 0, musicName: "cello - medium a.wav")
+    var peach2 = Fruit(filename: "peach", width: 300, height: 300, xPosition: 0, yPosition: 0, musicName: "cello - medium c.wav")
+    
     
 
     
@@ -36,27 +49,35 @@ class GameScene: SKScene {
         background.zPosition = -1
         addChild(background)
         
-        appleTree = SKSpriteNode(imageNamed: "appleTree")
-        appleTree.position = CGPoint(x: frame.midX + 400, y: frame.midY - 180)
-        appleTree.setScale(0.25)
-        addChild(appleTree)
+        appleTree.addFruit(fruit: apple)
+        appleTree.addFruit(fruit: apple2)
+        appleTree.node.setScale(0.25)
+        addChild(appleTree.node)
+        appleTree.setPosition(xPosition: Double(frame.midX + 400), yPosition: Double(frame.midY - 100))
         
-        bananaTree = SKSpriteNode(imageNamed: "bananaTree")
-        bananaTree.position = CGPoint(x: frame.midX + 50, y: frame.midY - 150)
-        bananaTree.setScale(0.25)
-        addChild(bananaTree)
-        self.anchorPoint = CGPoint(x:0.5,y:0.5)
+        bananaTree.addFruit(fruit: banana)
+        bananaTree.addFruit(fruit: banana2)
+        bananaTree.node.setScale(0.25)
+        addChild(bananaTree.node)
+        bananaTree.setPosition(xPosition: Double(frame.midX + 50), yPosition: Double(frame.midY - 150))
         
-        lemonTree = SKSpriteNode(imageNamed: "lemonTree")
-        lemonTree.position = CGPoint(x: frame.midX - 400, y: frame.midY + 100)
-        lemonTree.setScale(0.25)
-        addChild(lemonTree)
-
         coconutTree.addFruit(fruit: coconut)
         coconutTree.addFruit(fruit: coconut2)
         coconutTree.node.setScale(0.25)
         addChild(coconutTree.node)
-        coconutTree.setPosition(xPosition: 300, yPosition: 100)
+        coconutTree.setPosition(xPosition: 300, yPosition: 200)
+        
+        lemonTree.addFruit(fruit: lemon)
+        lemonTree.addFruit(fruit: lemon2)
+        lemonTree.node.setScale(0.25)
+        addChild(lemonTree.node)
+        lemonTree.setPosition(xPosition: Double(frame.midX - 400), yPosition: Double(frame.midY + 100))
+        
+        peachTree.addFruit(fruit: peach)
+        peachTree.addFruit(fruit: peach2)
+        peachTree.node.setScale(0.25)
+        addChild(peachTree.node)
+        peachTree.setPosition(xPosition: -100, yPosition: 200)
         
     }
 
@@ -71,44 +92,21 @@ class GameScene: SKScene {
             coconut2.playMusic()
             coconutTree.deleteFruit(fruit: coconut2, number: 1)
         }
-//        temporarily commented this out to test SKAction sequencing
-//
-//        if myTree.node.contains(touch.location(in: self)) {
-//            coconut.playMusic()
-//        }
 
-        // playing around with SKAction sequencing
-//        let vocalShortA = SKAction.playSoundFileNamed("voice - short a", waitForCompletion: false)
-//        let vocalShortD = SKAction.playSoundFileNamed("voice - short d", waitForCompletion: false)
-//        let vocalShortG = SKAction.playSoundFileNamed("voice - short g", waitForCompletion: false)
-//        let celloShortA = SKAction.playSoundFileNamed("cello - short a", waitForCompletion: false)
-//        let celloShortC = SKAction.playSoundFileNamed("cello - short c", waitForCompletion: false)
-//        let celloShortE = SKAction.playSoundFileNamed("cello - short e", waitForCompletion: false)
-//        let trumpetShortD = SKAction.playSoundFileNamed("trumpet - short d", waitForCompletion: false)
-//        let trumpetShortA = SKAction.playSoundFileNamed("trumpet - short a", waitForCompletion: false)
-//        let wait = SKAction.wait(forDuration: 1)
-//        let wait2 = SKAction.wait(forDuration: 2)
         
-        //        this works right now! a couple different variations on what sequences could be
-//        if appleTree.contains(touch.location(in: self)) {
-//            run(
-//                SKAction.repeat(
-//                    SKAction.sequence([
-//                        SKAction.note(instrument: "voice", note: "a", duration: 0.4),
-//                        SKAction.note(instrument: "voice", note: "d", duration: 0.2),
-//                        SKAction.note(instrument: "voice", note: "d", duration: 0.2),
-//                        SKAction.note(instrument: "voice", note: "d", duration: 0.2),
-//                    ]),
-//                    count: 5
-//                )
-//            );
-//        }
-        
-        if lemonTree.contains(touch.location(in: self)) {
-            run(SKAction.sequence([celloShortA, wait, celloShortC, celloShortE]))
-        }
-        if bananaTree.contains(touch.location(in: self)) {
-            run(SKAction.sequence([trumpetShortA, trumpetShortD, wait, trumpetShortD]))
+        if appleTree.node.contains(touch.location(in: apple.node)) {
+            run(
+                SKAction.repeat(
+                    SKAction.sequence([
+                        SKAction.note(instrument: "voice", note: "a", duration: 0.4),
+                        SKAction.note(instrument: "voice", note: "d", duration: 0.2),
+                        SKAction.note(instrument: "voice", note: "d", duration: 0.2),
+                        SKAction.note(instrument: "voice", note: "d", duration: 0.2),
+                    ]),
+                    count: 5
+                )
+            );
+            appleTree.deleteFruit(fruit: apple, number: 0)
         }
     }
     

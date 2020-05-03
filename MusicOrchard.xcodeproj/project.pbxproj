@@ -9,10 +9,6 @@
 /* Begin PBXBuildFile section */
 		820E8F1C245638310062533A /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820E8F1A245638300062533A /* Fruit.swift */; };
 		820E8F1D245638310062533A /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820E8F1B245638300062533A /* Tree.swift */; };
-		AF46220E243FD8CB00127AEA /* g-maj.wav in Resources */ = {isa = PBXBuildFile; fileRef = AF46220D243FD8CB00127AEA /* g-maj.wav */; };
-		AF462212243FD8D900127AEA /* sydance2.wav in Resources */ = {isa = PBXBuildFile; fileRef = AF462211243FD8D900127AEA /* sydance2.wav */; };
-		AF462214243FD8DF00127AEA /* piano-intro.wav in Resources */ = {isa = PBXBuildFile; fileRef = AF462213243FD8DF00127AEA /* piano-intro.wav */; };
-		AF462216243FD8E400127AEA /* bgm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = AF462215243FD8E400127AEA /* bgm.mp3 */; };
 		AFA66AF424118D750002F732 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA66AF324118D750002F732 /* AppDelegate.swift */; };
 		AFA66AF624118D750002F732 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = AFA66AF524118D750002F732 /* GameScene.sks */; };
 		AFA66AFA24118D750002F732 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA66AF924118D750002F732 /* GameScene.swift */; };
@@ -99,10 +95,6 @@
 /* Begin PBXFileReference section */
 		820E8F1A245638300062533A /* Fruit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
 		820E8F1B245638300062533A /* Tree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
-		AF46220D243FD8CB00127AEA /* g-maj.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "g-maj.wav"; sourceTree = "<group>"; };
-		AF462211243FD8D900127AEA /* sydance2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sydance2.wav; sourceTree = "<group>"; };
-		AF462213243FD8DF00127AEA /* piano-intro.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "piano-intro.wav"; sourceTree = "<group>"; };
-		AF462215243FD8E400127AEA /* bgm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bgm.mp3; sourceTree = "<group>"; };
 		AFA66AF024118D750002F732 /* MusicOrchard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicOrchard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFA66AF324118D750002F732 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFA66AF524118D750002F732 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -354,10 +346,6 @@
 				C302F3AE245A851500157BDE /* Trumpet Sounds */,
 				C3DA5F7A2459489F00B35B9A /* Cello Sounds */,
 				C31E219224569DA100662FF6 /* Voice Sounds */,
-				AF46220D243FD8CB00127AEA /* g-maj.wav */,
-				AF462211243FD8D900127AEA /* sydance2.wav */,
-				AF462213243FD8DF00127AEA /* piano-intro.wav */,
-				AF462215243FD8E400127AEA /* bgm.mp3 */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -481,11 +469,9 @@
 				C302F3BD245A854600157BDE /* trumpet - short c.wav in Resources */,
 				C3DF366B245E579500D738F6 /* banjo - short c.wav in Resources */,
 				C302F3BA245A854600157BDE /* trumpet - medium g.wav in Resources */,
-				AF462216243FD8E400127AEA /* bgm.mp3 in Resources */,
 				C3D59EDB2457AC01004CFF34 /* voice - long g.wav in Resources */,
 				C302F3C2245A854600157BDE /* trumpet - medium d.wav in Resources */,
 				C302F3BF245A854600157BDE /* trumpet - medium e.wav in Resources */,
-				AF462214243FD8DF00127AEA /* piano-intro.wav in Resources */,
 				C3DA5F8D2459490200B35B9A /* cello - medium e.wav in Resources */,
 				C3DF366C245E579500D738F6 /* banjo - short d.wav in Resources */,
 				C3DF3656245E569900D738F6 /* sax - short d.wav in Resources */,
@@ -506,12 +492,10 @@
 				C302F3BE245A854600157BDE /* trumpet - short d.wav in Resources */,
 				C3D59ED72457AC01004CFF34 /* voice - short a.wav in Resources */,
 				C3DF366D245E579500D738F6 /* banjo - short e.wav in Resources */,
-				AF46220E243FD8CB00127AEA /* g-maj.wav in Resources */,
 				C3DA5F8C2459490200B35B9A /* cello - short c.wav in Resources */,
 				C302F3B9245A854600157BDE /* trumpet - medium a.wav in Resources */,
 				C3DF3669245E579500D738F6 /* banjo - medium a.wav in Resources */,
 				C3DA5F882459490200B35B9A /* cello - medium c.wav in Resources */,
-				AF462212243FD8D900127AEA /* sydance2.wav in Resources */,
 				C3D59ED52457AC01004CFF34 /* voice - medium c.wav in Resources */,
 				C3DF3652245E569900D738F6 /* sax - medium g.wav in Resources */,
 				C3D59ED12457AC01004CFF34 /* voice - long a.wav in Resources */,
