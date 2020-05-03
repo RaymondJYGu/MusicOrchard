@@ -18,61 +18,56 @@
 		AFA66B0424118D770002F732 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA66B0224118D770002F732 /* LaunchScreen.storyboard */; };
 		AFA66B0F24118D780002F732 /* MusicOrchardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA66B0E24118D780002F732 /* MusicOrchardTests.swift */; };
 		AFA66B1A24118D780002F732 /* MusicOrchardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA66B1924118D780002F732 /* MusicOrchardUITests.swift */; };
-		C302F3B9245A854600157BDE /* trumpet - medium a.wav in Resources */ = {isa = PBXBuildFile; fileRef = C302F3AF245A854600157BDE /* trumpet - medium a.wav */; };
-		C302F3BA245A854600157BDE /* trumpet - medium g.wav in Resources */ = {isa = PBXBuildFile; fileRef = C302F3B0245A854600157BDE /* trumpet - medium g.wav */; };
-		C302F3BB245A854600157BDE /* trumpet - short a.wav in Resources */ = {isa = PBXBuildFile; fileRef = C302F3B1245A854600157BDE /* trumpet - short a.wav */; };
-		C302F3BC245A854600157BDE /* trumpet - medium c.wav in Resources */ = {isa = PBXBuildFile; fileRef = C302F3B2245A854600157BDE /* trumpet - medium c.wav */; };
-		C302F3BD245A854600157BDE /* trumpet - short c.wav in Resources */ = {isa = PBXBuildFile; fileRef = C302F3B3245A854600157BDE /* trumpet - short c.wav */; };
-		C302F3BE245A854600157BDE /* trumpet - short d.wav in Resources */ = {isa = PBXBuildFile; fileRef = C302F3B4245A854600157BDE /* trumpet - short d.wav */; };
-		C302F3BF245A854600157BDE /* trumpet - medium e.wav in Resources */ = {isa = PBXBuildFile; fileRef = C302F3B5245A854600157BDE /* trumpet - medium e.wav */; };
-		C302F3C0245A854600157BDE /* trumpet - short e.wav in Resources */ = {isa = PBXBuildFile; fileRef = C302F3B6245A854600157BDE /* trumpet - short e.wav */; };
-		C302F3C1245A854600157BDE /* trumpet - short g.wav in Resources */ = {isa = PBXBuildFile; fileRef = C302F3B7245A854600157BDE /* trumpet - short g.wav */; };
-		C302F3C2245A854600157BDE /* trumpet - medium d.wav in Resources */ = {isa = PBXBuildFile; fileRef = C302F3B8245A854600157BDE /* trumpet - medium d.wav */; };
-		C3D59ECF2457AC01004CFF34 /* voice - long c.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3D59EC02457AC00004CFF34 /* voice - long c.wav */; };
-		C3D59ED02457AC01004CFF34 /* voice - medium a.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3D59EC12457AC00004CFF34 /* voice - medium a.wav */; };
-		C3D59ED12457AC01004CFF34 /* voice - long a.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3D59EC22457AC01004CFF34 /* voice - long a.wav */; };
-		C3D59ED22457AC01004CFF34 /* voice - medium e.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3D59EC32457AC01004CFF34 /* voice - medium e.wav */; };
-		C3D59ED32457AC01004CFF34 /* voice - long d.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3D59EC42457AC01004CFF34 /* voice - long d.wav */; };
-		C3D59ED42457AC01004CFF34 /* voice - short d.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3D59EC52457AC01004CFF34 /* voice - short d.wav */; };
-		C3D59ED52457AC01004CFF34 /* voice - medium c.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3D59EC62457AC01004CFF34 /* voice - medium c.wav */; };
-		C3D59ED62457AC01004CFF34 /* voice - short e.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3D59EC72457AC01004CFF34 /* voice - short e.wav */; };
-		C3D59ED72457AC01004CFF34 /* voice - short a.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3D59EC82457AC01004CFF34 /* voice - short a.wav */; };
-		C3D59ED82457AC01004CFF34 /* voice - short c.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3D59EC92457AC01004CFF34 /* voice - short c.wav */; };
-		C3D59ED92457AC01004CFF34 /* voice - medium d.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3D59ECA2457AC01004CFF34 /* voice - medium d.wav */; };
-		C3D59EDA2457AC01004CFF34 /* voice - long e.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3D59ECB2457AC01004CFF34 /* voice - long e.wav */; };
-		C3D59EDB2457AC01004CFF34 /* voice - long g.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3D59ECC2457AC01004CFF34 /* voice - long g.wav */; };
-		C3D59EDC2457AC01004CFF34 /* voice - short g.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3D59ECD2457AC01004CFF34 /* voice - short g.wav */; };
-		C3D59EDD2457AC01004CFF34 /* voice - medium g.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3D59ECE2457AC01004CFF34 /* voice - medium g.wav */; };
-		C3DA5F852459490200B35B9A /* cello - short g.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3DA5F7B2459490100B35B9A /* cello - short g.wav */; };
-		C3DA5F862459490200B35B9A /* cello - medium d.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3DA5F7C2459490200B35B9A /* cello - medium d.wav */; };
-		C3DA5F872459490200B35B9A /* cello - medium a.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3DA5F7D2459490200B35B9A /* cello - medium a.wav */; };
-		C3DA5F882459490200B35B9A /* cello - medium c.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3DA5F7E2459490200B35B9A /* cello - medium c.wav */; };
-		C3DA5F892459490200B35B9A /* cello - short e.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3DA5F7F2459490200B35B9A /* cello - short e.wav */; };
-		C3DA5F8A2459490200B35B9A /* cello - medium g.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3DA5F802459490200B35B9A /* cello - medium g.wav */; };
-		C3DA5F8B2459490200B35B9A /* cello - short a.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3DA5F812459490200B35B9A /* cello - short a.wav */; };
-		C3DA5F8C2459490200B35B9A /* cello - short c.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3DA5F822459490200B35B9A /* cello - short c.wav */; };
-		C3DA5F8D2459490200B35B9A /* cello - medium e.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3DA5F832459490200B35B9A /* cello - medium e.wav */; };
-		C3DA5F8E2459490200B35B9A /* cello - short d.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3DA5F842459490200B35B9A /* cello - short d.wav */; };
-		C3DF3651245E569900D738F6 /* sax - medium e.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3DF3647245E569900D738F6 /* sax - medium e.wav */; };
-		C3DF3652245E569900D738F6 /* sax - medium g.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3DF3648245E569900D738F6 /* sax - medium g.wav */; };
-		C3DF3653245E569900D738F6 /* sax - medium c.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3DF3649245E569900D738F6 /* sax - medium c.wav */; };
-		C3DF3654245E569900D738F6 /* sax - medium a.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3DF364A245E569900D738F6 /* sax - medium a.wav */; };
-		C3DF3655245E569900D738F6 /* sax - short c.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3DF364B245E569900D738F6 /* sax - short c.wav */; };
-		C3DF3656245E569900D738F6 /* sax - short d.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3DF364C245E569900D738F6 /* sax - short d.wav */; };
-		C3DF3657245E569900D738F6 /* sax - short g.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3DF364D245E569900D738F6 /* sax - short g.wav */; };
-		C3DF3658245E569900D738F6 /* sax - medium d.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3DF364E245E569900D738F6 /* sax - medium d.wav */; };
-		C3DF3659245E569900D738F6 /* sax - short a.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3DF364F245E569900D738F6 /* sax - short a.wav */; };
-		C3DF365A245E569900D738F6 /* sax - short e.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3DF3650245E569900D738F6 /* sax - short e.wav */; };
-		C3DF3665245E579500D738F6 /* banjo - short a.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3DF365B245E579500D738F6 /* banjo - short a.wav */; };
-		C3DF3666245E579500D738F6 /* banjo - medium g.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3DF365C245E579500D738F6 /* banjo - medium g.wav */; };
-		C3DF3667245E579500D738F6 /* banjo - medium e.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3DF365D245E579500D738F6 /* banjo - medium e.wav */; };
-		C3DF3668245E579500D738F6 /* banjo - medium d.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3DF365E245E579500D738F6 /* banjo - medium d.wav */; };
-		C3DF3669245E579500D738F6 /* banjo - medium a.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3DF365F245E579500D738F6 /* banjo - medium a.wav */; };
-		C3DF366A245E579500D738F6 /* banjo - medium c.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3DF3660245E579500D738F6 /* banjo - medium c.wav */; };
-		C3DF366B245E579500D738F6 /* banjo - short c.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3DF3661245E579500D738F6 /* banjo - short c.wav */; };
-		C3DF366C245E579500D738F6 /* banjo - short d.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3DF3662245E579500D738F6 /* banjo - short d.wav */; };
-		C3DF366D245E579500D738F6 /* banjo - short e.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3DF3663245E579500D738F6 /* banjo - short e.wav */; };
-		C3DF366E245E579500D738F6 /* banjo - short g.wav in Resources */ = {isa = PBXBuildFile; fileRef = C3DF3664245E579500D738F6 /* banjo - short g.wav */; };
+		C31CC48A245F7B8700E462EE /* banjo - medium d.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC480245F7B8600E462EE /* banjo - medium d.wav */; };
+		C31CC48B245F7B8700E462EE /* banjo - medium e.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC481245F7B8600E462EE /* banjo - medium e.wav */; };
+		C31CC48C245F7B8700E462EE /* banjo - medium g.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC482245F7B8600E462EE /* banjo - medium g.wav */; };
+		C31CC48D245F7B8700E462EE /* banjo - short g.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC483245F7B8600E462EE /* banjo - short g.wav */; };
+		C31CC48E245F7B8700E462EE /* banjo - short a.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC484245F7B8600E462EE /* banjo - short a.wav */; };
+		C31CC48F245F7B8700E462EE /* banjo - short c.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC485245F7B8700E462EE /* banjo - short c.wav */; };
+		C31CC490245F7B8700E462EE /* banjo - short d.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC486245F7B8700E462EE /* banjo - short d.wav */; };
+		C31CC491245F7B8700E462EE /* banjo - medium c.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC487245F7B8700E462EE /* banjo - medium c.wav */; };
+		C31CC492245F7B8700E462EE /* banjo - short e.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC488245F7B8700E462EE /* banjo - short e.wav */; };
+		C31CC493245F7B8700E462EE /* banjo - medium a.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC489245F7B8700E462EE /* banjo - medium a.wav */; };
+		C31CC49E245F7B9400E462EE /* sax - medium a.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC494245F7B9300E462EE /* sax - medium a.wav */; };
+		C31CC49F245F7B9400E462EE /* sax - medium d.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC495245F7B9300E462EE /* sax - medium d.wav */; };
+		C31CC4A0245F7B9400E462EE /* sax - medium g.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC496245F7B9300E462EE /* sax - medium g.wav */; };
+		C31CC4A1245F7B9400E462EE /* sax - short c.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC497245F7B9300E462EE /* sax - short c.wav */; };
+		C31CC4A2245F7B9400E462EE /* sax - short d.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC498245F7B9300E462EE /* sax - short d.wav */; };
+		C31CC4A3245F7B9400E462EE /* sax - short a.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC499245F7B9300E462EE /* sax - short a.wav */; };
+		C31CC4A4245F7B9400E462EE /* sax - short e.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC49A245F7B9300E462EE /* sax - short e.wav */; };
+		C31CC4A5245F7B9400E462EE /* sax - short g.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC49B245F7B9300E462EE /* sax - short g.wav */; };
+		C31CC4A6245F7B9400E462EE /* sax - medium c.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC49C245F7B9300E462EE /* sax - medium c.wav */; };
+		C31CC4A7245F7B9400E462EE /* sax - medium e.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC49D245F7B9400E462EE /* sax - medium e.wav */; };
+		C31CC4B2245F7BA200E462EE /* trumpet - medium a.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC4A8245F7BA100E462EE /* trumpet - medium a.wav */; };
+		C31CC4B3245F7BA200E462EE /* trumpet - medium e.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC4A9245F7BA100E462EE /* trumpet - medium e.wav */; };
+		C31CC4B4245F7BA200E462EE /* trumpet - medium d.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC4AA245F7BA100E462EE /* trumpet - medium d.wav */; };
+		C31CC4B5245F7BA200E462EE /* trumpet - medium c.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC4AB245F7BA100E462EE /* trumpet - medium c.wav */; };
+		C31CC4B6245F7BA200E462EE /* trumpet - medium g.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC4AC245F7BA100E462EE /* trumpet - medium g.wav */; };
+		C31CC4B7245F7BA200E462EE /* trumpet - short e.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC4AD245F7BA100E462EE /* trumpet - short e.wav */; };
+		C31CC4B8245F7BA200E462EE /* trumpet - short d.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC4AE245F7BA100E462EE /* trumpet - short d.wav */; };
+		C31CC4B9245F7BA200E462EE /* trumpet - short c.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC4AF245F7BA100E462EE /* trumpet - short c.wav */; };
+		C31CC4BA245F7BA200E462EE /* trumpet - short g.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC4B0245F7BA100E462EE /* trumpet - short g.wav */; };
+		C31CC4BB245F7BA200E462EE /* trumpet - short a.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC4B1245F7BA100E462EE /* trumpet - short a.wav */; };
+		C31CC4C6245F7BB700E462EE /* cello - short g.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC4BC245F7BB600E462EE /* cello - short g.wav */; };
+		C31CC4C7245F7BB700E462EE /* cello - short d.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC4BD245F7BB700E462EE /* cello - short d.wav */; };
+		C31CC4C8245F7BB700E462EE /* cello - medium d.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC4BE245F7BB700E462EE /* cello - medium d.wav */; };
+		C31CC4C9245F7BB700E462EE /* cello - short a.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC4BF245F7BB700E462EE /* cello - short a.wav */; };
+		C31CC4CA245F7BB700E462EE /* cello - medium g.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC4C0245F7BB700E462EE /* cello - medium g.wav */; };
+		C31CC4CB245F7BB700E462EE /* cello - medium c.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC4C1245F7BB700E462EE /* cello - medium c.wav */; };
+		C31CC4CC245F7BB700E462EE /* cello - medium a.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC4C2245F7BB700E462EE /* cello - medium a.wav */; };
+		C31CC4CD245F7BB700E462EE /* cello - medium e.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC4C3245F7BB700E462EE /* cello - medium e.wav */; };
+		C31CC4CE245F7BB700E462EE /* cello - short c.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC4C4245F7BB700E462EE /* cello - short c.wav */; };
+		C31CC4CF245F7BB700E462EE /* cello - short e.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC4C5245F7BB700E462EE /* cello - short e.wav */; };
+		C31CC4DA245F7BC600E462EE /* voice - short c.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC4D0245F7BC500E462EE /* voice - short c.wav */; };
+		C31CC4DB245F7BC600E462EE /* voice - short d.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC4D1245F7BC500E462EE /* voice - short d.wav */; };
+		C31CC4DC245F7BC600E462EE /* voice - short g.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC4D2245F7BC500E462EE /* voice - short g.wav */; };
+		C31CC4DD245F7BC600E462EE /* voice - medium g.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC4D3245F7BC500E462EE /* voice - medium g.wav */; };
+		C31CC4DE245F7BC600E462EE /* voice - short a.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC4D4245F7BC500E462EE /* voice - short a.wav */; };
+		C31CC4DF245F7BC600E462EE /* voice - medium a.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC4D5245F7BC600E462EE /* voice - medium a.wav */; };
+		C31CC4E0245F7BC600E462EE /* voice - short e.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC4D6245F7BC600E462EE /* voice - short e.wav */; };
+		C31CC4E1245F7BC600E462EE /* voice - medium c.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC4D7245F7BC600E462EE /* voice - medium c.wav */; };
+		C31CC4E2245F7BC600E462EE /* voice - medium e.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC4D8245F7BC600E462EE /* voice - medium e.wav */; };
+		C31CC4E3245F7BC600E462EE /* voice - medium d.wav in Resources */ = {isa = PBXBuildFile; fileRef = C31CC4D9245F7BC600E462EE /* voice - medium d.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,61 +105,56 @@
 		AFA66B1524118D780002F732 /* MusicOrchardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MusicOrchardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFA66B1924118D780002F732 /* MusicOrchardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicOrchardUITests.swift; sourceTree = "<group>"; };
 		AFA66B1B24118D780002F732 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C302F3AF245A854600157BDE /* trumpet - medium a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "trumpet - medium a.wav"; path = "../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/MusicOrchard Sounds/trumpet - medium a.wav"; sourceTree = "<group>"; };
-		C302F3B0245A854600157BDE /* trumpet - medium g.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "trumpet - medium g.wav"; path = "../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/MusicOrchard Sounds/trumpet - medium g.wav"; sourceTree = "<group>"; };
-		C302F3B1245A854600157BDE /* trumpet - short a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "trumpet - short a.wav"; path = "../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/MusicOrchard Sounds/trumpet - short a.wav"; sourceTree = "<group>"; };
-		C302F3B2245A854600157BDE /* trumpet - medium c.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "trumpet - medium c.wav"; path = "../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/MusicOrchard Sounds/trumpet - medium c.wav"; sourceTree = "<group>"; };
-		C302F3B3245A854600157BDE /* trumpet - short c.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "trumpet - short c.wav"; path = "../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/MusicOrchard Sounds/trumpet - short c.wav"; sourceTree = "<group>"; };
-		C302F3B4245A854600157BDE /* trumpet - short d.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "trumpet - short d.wav"; path = "../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/MusicOrchard Sounds/trumpet - short d.wav"; sourceTree = "<group>"; };
-		C302F3B5245A854600157BDE /* trumpet - medium e.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "trumpet - medium e.wav"; path = "../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/MusicOrchard Sounds/trumpet - medium e.wav"; sourceTree = "<group>"; };
-		C302F3B6245A854600157BDE /* trumpet - short e.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "trumpet - short e.wav"; path = "../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/MusicOrchard Sounds/trumpet - short e.wav"; sourceTree = "<group>"; };
-		C302F3B7245A854600157BDE /* trumpet - short g.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "trumpet - short g.wav"; path = "../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/MusicOrchard Sounds/trumpet - short g.wav"; sourceTree = "<group>"; };
-		C302F3B8245A854600157BDE /* trumpet - medium d.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "trumpet - medium d.wav"; path = "../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/MusicOrchard Sounds/trumpet - medium d.wav"; sourceTree = "<group>"; };
-		C3D59EC02457AC00004CFF34 /* voice - long c.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "voice - long c.wav"; sourceTree = "<group>"; };
-		C3D59EC12457AC00004CFF34 /* voice - medium a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "voice - medium a.wav"; sourceTree = "<group>"; };
-		C3D59EC22457AC01004CFF34 /* voice - long a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "voice - long a.wav"; sourceTree = "<group>"; };
-		C3D59EC32457AC01004CFF34 /* voice - medium e.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "voice - medium e.wav"; sourceTree = "<group>"; };
-		C3D59EC42457AC01004CFF34 /* voice - long d.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "voice - long d.wav"; sourceTree = "<group>"; };
-		C3D59EC52457AC01004CFF34 /* voice - short d.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "voice - short d.wav"; sourceTree = "<group>"; };
-		C3D59EC62457AC01004CFF34 /* voice - medium c.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "voice - medium c.wav"; sourceTree = "<group>"; };
-		C3D59EC72457AC01004CFF34 /* voice - short e.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "voice - short e.wav"; sourceTree = "<group>"; };
-		C3D59EC82457AC01004CFF34 /* voice - short a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "voice - short a.wav"; sourceTree = "<group>"; };
-		C3D59EC92457AC01004CFF34 /* voice - short c.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "voice - short c.wav"; sourceTree = "<group>"; };
-		C3D59ECA2457AC01004CFF34 /* voice - medium d.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "voice - medium d.wav"; sourceTree = "<group>"; };
-		C3D59ECB2457AC01004CFF34 /* voice - long e.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "voice - long e.wav"; sourceTree = "<group>"; };
-		C3D59ECC2457AC01004CFF34 /* voice - long g.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "voice - long g.wav"; sourceTree = "<group>"; };
-		C3D59ECD2457AC01004CFF34 /* voice - short g.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "voice - short g.wav"; sourceTree = "<group>"; };
-		C3D59ECE2457AC01004CFF34 /* voice - medium g.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "voice - medium g.wav"; sourceTree = "<group>"; };
-		C3DA5F7B2459490100B35B9A /* cello - short g.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "cello - short g.wav"; sourceTree = "<group>"; };
-		C3DA5F7C2459490200B35B9A /* cello - medium d.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "cello - medium d.wav"; sourceTree = "<group>"; };
-		C3DA5F7D2459490200B35B9A /* cello - medium a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "cello - medium a.wav"; sourceTree = "<group>"; };
-		C3DA5F7E2459490200B35B9A /* cello - medium c.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "cello - medium c.wav"; sourceTree = "<group>"; };
-		C3DA5F7F2459490200B35B9A /* cello - short e.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "cello - short e.wav"; sourceTree = "<group>"; };
-		C3DA5F802459490200B35B9A /* cello - medium g.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "cello - medium g.wav"; sourceTree = "<group>"; };
-		C3DA5F812459490200B35B9A /* cello - short a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "cello - short a.wav"; sourceTree = "<group>"; };
-		C3DA5F822459490200B35B9A /* cello - short c.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "cello - short c.wav"; sourceTree = "<group>"; };
-		C3DA5F832459490200B35B9A /* cello - medium e.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "cello - medium e.wav"; sourceTree = "<group>"; };
-		C3DA5F842459490200B35B9A /* cello - short d.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "cello - short d.wav"; sourceTree = "<group>"; };
-		C3DF3647245E569900D738F6 /* sax - medium e.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "sax - medium e.wav"; path = "../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/MusicOrchard Sounds/sax - medium e.wav"; sourceTree = "<group>"; };
-		C3DF3648245E569900D738F6 /* sax - medium g.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "sax - medium g.wav"; path = "../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/MusicOrchard Sounds/sax - medium g.wav"; sourceTree = "<group>"; };
-		C3DF3649245E569900D738F6 /* sax - medium c.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "sax - medium c.wav"; path = "../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/MusicOrchard Sounds/sax - medium c.wav"; sourceTree = "<group>"; };
-		C3DF364A245E569900D738F6 /* sax - medium a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "sax - medium a.wav"; path = "../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/MusicOrchard Sounds/sax - medium a.wav"; sourceTree = "<group>"; };
-		C3DF364B245E569900D738F6 /* sax - short c.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "sax - short c.wav"; path = "../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/MusicOrchard Sounds/sax - short c.wav"; sourceTree = "<group>"; };
-		C3DF364C245E569900D738F6 /* sax - short d.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "sax - short d.wav"; path = "../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/MusicOrchard Sounds/sax - short d.wav"; sourceTree = "<group>"; };
-		C3DF364D245E569900D738F6 /* sax - short g.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "sax - short g.wav"; path = "../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/MusicOrchard Sounds/sax - short g.wav"; sourceTree = "<group>"; };
-		C3DF364E245E569900D738F6 /* sax - medium d.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "sax - medium d.wav"; path = "../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/MusicOrchard Sounds/sax - medium d.wav"; sourceTree = "<group>"; };
-		C3DF364F245E569900D738F6 /* sax - short a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "sax - short a.wav"; path = "../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/MusicOrchard Sounds/sax - short a.wav"; sourceTree = "<group>"; };
-		C3DF3650245E569900D738F6 /* sax - short e.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = "sax - short e.wav"; path = "../../../../Music/iTunes/iTunes Media/Music/Unknown Artist/MusicOrchard Sounds/sax - short e.wav"; sourceTree = "<group>"; };
-		C3DF365B245E579500D738F6 /* banjo - short a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "banjo - short a.wav"; sourceTree = "<group>"; };
-		C3DF365C245E579500D738F6 /* banjo - medium g.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "banjo - medium g.wav"; sourceTree = "<group>"; };
-		C3DF365D245E579500D738F6 /* banjo - medium e.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "banjo - medium e.wav"; sourceTree = "<group>"; };
-		C3DF365E245E579500D738F6 /* banjo - medium d.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "banjo - medium d.wav"; sourceTree = "<group>"; };
-		C3DF365F245E579500D738F6 /* banjo - medium a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "banjo - medium a.wav"; sourceTree = "<group>"; };
-		C3DF3660245E579500D738F6 /* banjo - medium c.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "banjo - medium c.wav"; sourceTree = "<group>"; };
-		C3DF3661245E579500D738F6 /* banjo - short c.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "banjo - short c.wav"; sourceTree = "<group>"; };
-		C3DF3662245E579500D738F6 /* banjo - short d.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "banjo - short d.wav"; sourceTree = "<group>"; };
-		C3DF3663245E579500D738F6 /* banjo - short e.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "banjo - short e.wav"; sourceTree = "<group>"; };
-		C3DF3664245E579500D738F6 /* banjo - short g.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "banjo - short g.wav"; sourceTree = "<group>"; };
+		C31CC480245F7B8600E462EE /* banjo - medium d.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "banjo - medium d.wav"; sourceTree = "<group>"; };
+		C31CC481245F7B8600E462EE /* banjo - medium e.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "banjo - medium e.wav"; sourceTree = "<group>"; };
+		C31CC482245F7B8600E462EE /* banjo - medium g.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "banjo - medium g.wav"; sourceTree = "<group>"; };
+		C31CC483245F7B8600E462EE /* banjo - short g.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "banjo - short g.wav"; sourceTree = "<group>"; };
+		C31CC484245F7B8600E462EE /* banjo - short a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "banjo - short a.wav"; sourceTree = "<group>"; };
+		C31CC485245F7B8700E462EE /* banjo - short c.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "banjo - short c.wav"; sourceTree = "<group>"; };
+		C31CC486245F7B8700E462EE /* banjo - short d.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "banjo - short d.wav"; sourceTree = "<group>"; };
+		C31CC487245F7B8700E462EE /* banjo - medium c.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "banjo - medium c.wav"; sourceTree = "<group>"; };
+		C31CC488245F7B8700E462EE /* banjo - short e.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "banjo - short e.wav"; sourceTree = "<group>"; };
+		C31CC489245F7B8700E462EE /* banjo - medium a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "banjo - medium a.wav"; sourceTree = "<group>"; };
+		C31CC494245F7B9300E462EE /* sax - medium a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "sax - medium a.wav"; sourceTree = "<group>"; };
+		C31CC495245F7B9300E462EE /* sax - medium d.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "sax - medium d.wav"; sourceTree = "<group>"; };
+		C31CC496245F7B9300E462EE /* sax - medium g.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "sax - medium g.wav"; sourceTree = "<group>"; };
+		C31CC497245F7B9300E462EE /* sax - short c.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "sax - short c.wav"; sourceTree = "<group>"; };
+		C31CC498245F7B9300E462EE /* sax - short d.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "sax - short d.wav"; sourceTree = "<group>"; };
+		C31CC499245F7B9300E462EE /* sax - short a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "sax - short a.wav"; sourceTree = "<group>"; };
+		C31CC49A245F7B9300E462EE /* sax - short e.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "sax - short e.wav"; sourceTree = "<group>"; };
+		C31CC49B245F7B9300E462EE /* sax - short g.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "sax - short g.wav"; sourceTree = "<group>"; };
+		C31CC49C245F7B9300E462EE /* sax - medium c.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "sax - medium c.wav"; sourceTree = "<group>"; };
+		C31CC49D245F7B9400E462EE /* sax - medium e.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "sax - medium e.wav"; sourceTree = "<group>"; };
+		C31CC4A8245F7BA100E462EE /* trumpet - medium a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "trumpet - medium a.wav"; sourceTree = "<group>"; };
+		C31CC4A9245F7BA100E462EE /* trumpet - medium e.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "trumpet - medium e.wav"; sourceTree = "<group>"; };
+		C31CC4AA245F7BA100E462EE /* trumpet - medium d.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "trumpet - medium d.wav"; sourceTree = "<group>"; };
+		C31CC4AB245F7BA100E462EE /* trumpet - medium c.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "trumpet - medium c.wav"; sourceTree = "<group>"; };
+		C31CC4AC245F7BA100E462EE /* trumpet - medium g.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "trumpet - medium g.wav"; sourceTree = "<group>"; };
+		C31CC4AD245F7BA100E462EE /* trumpet - short e.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "trumpet - short e.wav"; sourceTree = "<group>"; };
+		C31CC4AE245F7BA100E462EE /* trumpet - short d.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "trumpet - short d.wav"; sourceTree = "<group>"; };
+		C31CC4AF245F7BA100E462EE /* trumpet - short c.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "trumpet - short c.wav"; sourceTree = "<group>"; };
+		C31CC4B0245F7BA100E462EE /* trumpet - short g.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "trumpet - short g.wav"; sourceTree = "<group>"; };
+		C31CC4B1245F7BA100E462EE /* trumpet - short a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "trumpet - short a.wav"; sourceTree = "<group>"; };
+		C31CC4BC245F7BB600E462EE /* cello - short g.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "cello - short g.wav"; sourceTree = "<group>"; };
+		C31CC4BD245F7BB700E462EE /* cello - short d.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "cello - short d.wav"; sourceTree = "<group>"; };
+		C31CC4BE245F7BB700E462EE /* cello - medium d.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "cello - medium d.wav"; sourceTree = "<group>"; };
+		C31CC4BF245F7BB700E462EE /* cello - short a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "cello - short a.wav"; sourceTree = "<group>"; };
+		C31CC4C0245F7BB700E462EE /* cello - medium g.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "cello - medium g.wav"; sourceTree = "<group>"; };
+		C31CC4C1245F7BB700E462EE /* cello - medium c.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "cello - medium c.wav"; sourceTree = "<group>"; };
+		C31CC4C2245F7BB700E462EE /* cello - medium a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "cello - medium a.wav"; sourceTree = "<group>"; };
+		C31CC4C3245F7BB700E462EE /* cello - medium e.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "cello - medium e.wav"; sourceTree = "<group>"; };
+		C31CC4C4245F7BB700E462EE /* cello - short c.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "cello - short c.wav"; sourceTree = "<group>"; };
+		C31CC4C5245F7BB700E462EE /* cello - short e.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "cello - short e.wav"; sourceTree = "<group>"; };
+		C31CC4D0245F7BC500E462EE /* voice - short c.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "voice - short c.wav"; sourceTree = "<group>"; };
+		C31CC4D1245F7BC500E462EE /* voice - short d.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "voice - short d.wav"; sourceTree = "<group>"; };
+		C31CC4D2245F7BC500E462EE /* voice - short g.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "voice - short g.wav"; sourceTree = "<group>"; };
+		C31CC4D3245F7BC500E462EE /* voice - medium g.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "voice - medium g.wav"; sourceTree = "<group>"; };
+		C31CC4D4245F7BC500E462EE /* voice - short a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "voice - short a.wav"; sourceTree = "<group>"; };
+		C31CC4D5245F7BC600E462EE /* voice - medium a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "voice - medium a.wav"; sourceTree = "<group>"; };
+		C31CC4D6245F7BC600E462EE /* voice - short e.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "voice - short e.wav"; sourceTree = "<group>"; };
+		C31CC4D7245F7BC600E462EE /* voice - medium c.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "voice - medium c.wav"; sourceTree = "<group>"; };
+		C31CC4D8245F7BC600E462EE /* voice - medium e.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "voice - medium e.wav"; sourceTree = "<group>"; };
+		C31CC4D9245F7BC600E462EE /* voice - medium d.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "voice - medium d.wav"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,16 +241,16 @@
 		C302F3AE245A851500157BDE /* Trumpet Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				C302F3AF245A854600157BDE /* trumpet - medium a.wav */,
-				C302F3B2245A854600157BDE /* trumpet - medium c.wav */,
-				C302F3B8245A854600157BDE /* trumpet - medium d.wav */,
-				C302F3B5245A854600157BDE /* trumpet - medium e.wav */,
-				C302F3B0245A854600157BDE /* trumpet - medium g.wav */,
-				C302F3B1245A854600157BDE /* trumpet - short a.wav */,
-				C302F3B3245A854600157BDE /* trumpet - short c.wav */,
-				C302F3B4245A854600157BDE /* trumpet - short d.wav */,
-				C302F3B6245A854600157BDE /* trumpet - short e.wav */,
-				C302F3B7245A854600157BDE /* trumpet - short g.wav */,
+				C31CC4A8245F7BA100E462EE /* trumpet - medium a.wav */,
+				C31CC4AB245F7BA100E462EE /* trumpet - medium c.wav */,
+				C31CC4AA245F7BA100E462EE /* trumpet - medium d.wav */,
+				C31CC4A9245F7BA100E462EE /* trumpet - medium e.wav */,
+				C31CC4AC245F7BA100E462EE /* trumpet - medium g.wav */,
+				C31CC4B1245F7BA100E462EE /* trumpet - short a.wav */,
+				C31CC4AF245F7BA100E462EE /* trumpet - short c.wav */,
+				C31CC4AE245F7BA100E462EE /* trumpet - short d.wav */,
+				C31CC4AD245F7BA100E462EE /* trumpet - short e.wav */,
+				C31CC4B0245F7BA100E462EE /* trumpet - short g.wav */,
 			);
 			path = "Trumpet Sounds";
 			sourceTree = "<group>";
@@ -268,21 +258,16 @@
 		C31E219224569DA100662FF6 /* Voice Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				C3D59EC22457AC01004CFF34 /* voice - long a.wav */,
-				C3D59EC02457AC00004CFF34 /* voice - long c.wav */,
-				C3D59EC42457AC01004CFF34 /* voice - long d.wav */,
-				C3D59ECB2457AC01004CFF34 /* voice - long e.wav */,
-				C3D59ECC2457AC01004CFF34 /* voice - long g.wav */,
-				C3D59EC12457AC00004CFF34 /* voice - medium a.wav */,
-				C3D59EC62457AC01004CFF34 /* voice - medium c.wav */,
-				C3D59ECA2457AC01004CFF34 /* voice - medium d.wav */,
-				C3D59EC32457AC01004CFF34 /* voice - medium e.wav */,
-				C3D59ECE2457AC01004CFF34 /* voice - medium g.wav */,
-				C3D59EC82457AC01004CFF34 /* voice - short a.wav */,
-				C3D59EC92457AC01004CFF34 /* voice - short c.wav */,
-				C3D59EC52457AC01004CFF34 /* voice - short d.wav */,
-				C3D59EC72457AC01004CFF34 /* voice - short e.wav */,
-				C3D59ECD2457AC01004CFF34 /* voice - short g.wav */,
+				C31CC4D5245F7BC600E462EE /* voice - medium a.wav */,
+				C31CC4D7245F7BC600E462EE /* voice - medium c.wav */,
+				C31CC4D9245F7BC600E462EE /* voice - medium d.wav */,
+				C31CC4D8245F7BC600E462EE /* voice - medium e.wav */,
+				C31CC4D3245F7BC500E462EE /* voice - medium g.wav */,
+				C31CC4D4245F7BC500E462EE /* voice - short a.wav */,
+				C31CC4D0245F7BC500E462EE /* voice - short c.wav */,
+				C31CC4D1245F7BC500E462EE /* voice - short d.wav */,
+				C31CC4D6245F7BC600E462EE /* voice - short e.wav */,
+				C31CC4D2245F7BC500E462EE /* voice - short g.wav */,
 			);
 			path = "Voice Sounds";
 			sourceTree = "<group>";
@@ -290,16 +275,16 @@
 		C3DA5F7A2459489F00B35B9A /* Cello Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				C3DA5F7D2459490200B35B9A /* cello - medium a.wav */,
-				C3DA5F7E2459490200B35B9A /* cello - medium c.wav */,
-				C3DA5F7C2459490200B35B9A /* cello - medium d.wav */,
-				C3DA5F832459490200B35B9A /* cello - medium e.wav */,
-				C3DA5F802459490200B35B9A /* cello - medium g.wav */,
-				C3DA5F812459490200B35B9A /* cello - short a.wav */,
-				C3DA5F822459490200B35B9A /* cello - short c.wav */,
-				C3DA5F842459490200B35B9A /* cello - short d.wav */,
-				C3DA5F7F2459490200B35B9A /* cello - short e.wav */,
-				C3DA5F7B2459490100B35B9A /* cello - short g.wav */,
+				C31CC4C2245F7BB700E462EE /* cello - medium a.wav */,
+				C31CC4C1245F7BB700E462EE /* cello - medium c.wav */,
+				C31CC4BE245F7BB700E462EE /* cello - medium d.wav */,
+				C31CC4C3245F7BB700E462EE /* cello - medium e.wav */,
+				C31CC4C0245F7BB700E462EE /* cello - medium g.wav */,
+				C31CC4BF245F7BB700E462EE /* cello - short a.wav */,
+				C31CC4C4245F7BB700E462EE /* cello - short c.wav */,
+				C31CC4BD245F7BB700E462EE /* cello - short d.wav */,
+				C31CC4C5245F7BB700E462EE /* cello - short e.wav */,
+				C31CC4BC245F7BB600E462EE /* cello - short g.wav */,
 			);
 			path = "Cello Sounds";
 			sourceTree = "<group>";
@@ -307,16 +292,16 @@
 		C3DF3645245E566400D738F6 /* Banjo Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				C3DF365F245E579500D738F6 /* banjo - medium a.wav */,
-				C3DF3660245E579500D738F6 /* banjo - medium c.wav */,
-				C3DF365E245E579500D738F6 /* banjo - medium d.wav */,
-				C3DF365D245E579500D738F6 /* banjo - medium e.wav */,
-				C3DF365C245E579500D738F6 /* banjo - medium g.wav */,
-				C3DF365B245E579500D738F6 /* banjo - short a.wav */,
-				C3DF3661245E579500D738F6 /* banjo - short c.wav */,
-				C3DF3662245E579500D738F6 /* banjo - short d.wav */,
-				C3DF3663245E579500D738F6 /* banjo - short e.wav */,
-				C3DF3664245E579500D738F6 /* banjo - short g.wav */,
+				C31CC489245F7B8700E462EE /* banjo - medium a.wav */,
+				C31CC487245F7B8700E462EE /* banjo - medium c.wav */,
+				C31CC480245F7B8600E462EE /* banjo - medium d.wav */,
+				C31CC481245F7B8600E462EE /* banjo - medium e.wav */,
+				C31CC482245F7B8600E462EE /* banjo - medium g.wav */,
+				C31CC484245F7B8600E462EE /* banjo - short a.wav */,
+				C31CC485245F7B8700E462EE /* banjo - short c.wav */,
+				C31CC486245F7B8700E462EE /* banjo - short d.wav */,
+				C31CC488245F7B8700E462EE /* banjo - short e.wav */,
+				C31CC483245F7B8600E462EE /* banjo - short g.wav */,
 			);
 			path = "Banjo Sounds";
 			sourceTree = "<group>";
@@ -324,16 +309,16 @@
 		C3DF3646245E566F00D738F6 /* Saxophone Sounds */ = {
 			isa = PBXGroup;
 			children = (
-				C3DF364A245E569900D738F6 /* sax - medium a.wav */,
-				C3DF3649245E569900D738F6 /* sax - medium c.wav */,
-				C3DF364E245E569900D738F6 /* sax - medium d.wav */,
-				C3DF3647245E569900D738F6 /* sax - medium e.wav */,
-				C3DF3648245E569900D738F6 /* sax - medium g.wav */,
-				C3DF364F245E569900D738F6 /* sax - short a.wav */,
-				C3DF364B245E569900D738F6 /* sax - short c.wav */,
-				C3DF364C245E569900D738F6 /* sax - short d.wav */,
-				C3DF3650245E569900D738F6 /* sax - short e.wav */,
-				C3DF364D245E569900D738F6 /* sax - short g.wav */,
+				C31CC494245F7B9300E462EE /* sax - medium a.wav */,
+				C31CC49C245F7B9300E462EE /* sax - medium c.wav */,
+				C31CC495245F7B9300E462EE /* sax - medium d.wav */,
+				C31CC49D245F7B9400E462EE /* sax - medium e.wav */,
+				C31CC496245F7B9300E462EE /* sax - medium g.wav */,
+				C31CC499245F7B9300E462EE /* sax - short a.wav */,
+				C31CC497245F7B9300E462EE /* sax - short c.wav */,
+				C31CC498245F7B9300E462EE /* sax - short d.wav */,
+				C31CC49A245F7B9300E462EE /* sax - short e.wav */,
+				C31CC49B245F7B9300E462EE /* sax - short g.wav */,
 			);
 			path = "Saxophone Sounds";
 			sourceTree = "<group>";
@@ -454,65 +439,60 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C3D59EDA2457AC01004CFF34 /* voice - long e.wav in Resources */,
 				AFA66AFF24118D750002F732 /* Main.storyboard in Resources */,
-				C3DA5F872459490200B35B9A /* cello - medium a.wav in Resources */,
-				C3D59ED22457AC01004CFF34 /* voice - medium e.wav in Resources */,
-				C302F3BC245A854600157BDE /* trumpet - medium c.wav in Resources */,
+				C31CC4DF245F7BC600E462EE /* voice - medium a.wav in Resources */,
+				C31CC492245F7B8700E462EE /* banjo - short e.wav in Resources */,
+				C31CC4CC245F7BB700E462EE /* cello - medium a.wav in Resources */,
+				C31CC4B9245F7BA200E462EE /* trumpet - short c.wav in Resources */,
+				C31CC4C7245F7BB700E462EE /* cello - short d.wav in Resources */,
 				AFA66AF624118D750002F732 /* GameScene.sks in Resources */,
-				C3DA5F8A2459490200B35B9A /* cello - medium g.wav in Resources */,
-				C3DA5F852459490200B35B9A /* cello - short g.wav in Resources */,
-				C3D59ED62457AC01004CFF34 /* voice - short e.wav in Resources */,
-				C3DF3668245E579500D738F6 /* banjo - medium d.wav in Resources */,
-				C3DF3651245E569900D738F6 /* sax - medium e.wav in Resources */,
+				C31CC48A245F7B8700E462EE /* banjo - medium d.wav in Resources */,
+				C31CC491245F7B8700E462EE /* banjo - medium c.wav in Resources */,
+				C31CC4CF245F7BB700E462EE /* cello - short e.wav in Resources */,
+				C31CC4B4245F7BA200E462EE /* trumpet - medium d.wav in Resources */,
+				C31CC4A7245F7B9400E462EE /* sax - medium e.wav in Resources */,
+				C31CC48F245F7B8700E462EE /* banjo - short c.wav in Resources */,
+				C31CC49E245F7B9400E462EE /* sax - medium a.wav in Resources */,
+				C31CC4DC245F7BC600E462EE /* voice - short g.wav in Resources */,
+				C31CC4A2245F7B9400E462EE /* sax - short d.wav in Resources */,
+				C31CC4CE245F7BB700E462EE /* cello - short c.wav in Resources */,
+				C31CC4A4245F7B9400E462EE /* sax - short e.wav in Resources */,
+				C31CC4DE245F7BC600E462EE /* voice - short a.wav in Resources */,
+				C31CC4DB245F7BC600E462EE /* voice - short d.wav in Resources */,
+				C31CC48B245F7B8700E462EE /* banjo - medium e.wav in Resources */,
+				C31CC48E245F7B8700E462EE /* banjo - short a.wav in Resources */,
 				AFA66B0124118D770002F732 /* Assets.xcassets in Resources */,
-				C302F3BD245A854600157BDE /* trumpet - short c.wav in Resources */,
-				C3DF366B245E579500D738F6 /* banjo - short c.wav in Resources */,
-				C302F3BA245A854600157BDE /* trumpet - medium g.wav in Resources */,
-				C3D59EDB2457AC01004CFF34 /* voice - long g.wav in Resources */,
-				C302F3C2245A854600157BDE /* trumpet - medium d.wav in Resources */,
-				C302F3BF245A854600157BDE /* trumpet - medium e.wav in Resources */,
-				C3DA5F8D2459490200B35B9A /* cello - medium e.wav in Resources */,
-				C3DF366C245E579500D738F6 /* banjo - short d.wav in Resources */,
-				C3DF3656245E569900D738F6 /* sax - short d.wav in Resources */,
-				C3DF366A245E579500D738F6 /* banjo - medium c.wav in Resources */,
-				C3DF3653245E569900D738F6 /* sax - medium c.wav in Resources */,
-				C3D59EDC2457AC01004CFF34 /* voice - short g.wav in Resources */,
-				C3DF3666245E579500D738F6 /* banjo - medium g.wav in Resources */,
-				C3DA5F892459490200B35B9A /* cello - short e.wav in Resources */,
-				C3D59ED42457AC01004CFF34 /* voice - short d.wav in Resources */,
-				C302F3C1245A854600157BDE /* trumpet - short g.wav in Resources */,
-				C3DF3654245E569900D738F6 /* sax - medium a.wav in Resources */,
-				C3D59EDD2457AC01004CFF34 /* voice - medium g.wav in Resources */,
-				C3D59ED32457AC01004CFF34 /* voice - long d.wav in Resources */,
-				C3D59ED82457AC01004CFF34 /* voice - short c.wav in Resources */,
-				C302F3BB245A854600157BDE /* trumpet - short a.wav in Resources */,
-				C3DF3658245E569900D738F6 /* sax - medium d.wav in Resources */,
-				C302F3C0245A854600157BDE /* trumpet - short e.wav in Resources */,
-				C302F3BE245A854600157BDE /* trumpet - short d.wav in Resources */,
-				C3D59ED72457AC01004CFF34 /* voice - short a.wav in Resources */,
-				C3DF366D245E579500D738F6 /* banjo - short e.wav in Resources */,
-				C3DA5F8C2459490200B35B9A /* cello - short c.wav in Resources */,
-				C302F3B9245A854600157BDE /* trumpet - medium a.wav in Resources */,
-				C3DF3669245E579500D738F6 /* banjo - medium a.wav in Resources */,
-				C3DA5F882459490200B35B9A /* cello - medium c.wav in Resources */,
-				C3D59ED52457AC01004CFF34 /* voice - medium c.wav in Resources */,
-				C3DF3652245E569900D738F6 /* sax - medium g.wav in Resources */,
-				C3D59ED12457AC01004CFF34 /* voice - long a.wav in Resources */,
+				C31CC4B7245F7BA200E462EE /* trumpet - short e.wav in Resources */,
+				C31CC4CD245F7BB700E462EE /* cello - medium e.wav in Resources */,
+				C31CC493245F7B8700E462EE /* banjo - medium a.wav in Resources */,
+				C31CC4B2245F7BA200E462EE /* trumpet - medium a.wav in Resources */,
+				C31CC4E0245F7BC600E462EE /* voice - short e.wav in Resources */,
+				C31CC4A1245F7B9400E462EE /* sax - short c.wav in Resources */,
+				C31CC4DA245F7BC600E462EE /* voice - short c.wav in Resources */,
+				C31CC4DD245F7BC600E462EE /* voice - medium g.wav in Resources */,
+				C31CC4B3245F7BA200E462EE /* trumpet - medium e.wav in Resources */,
+				C31CC4BA245F7BA200E462EE /* trumpet - short g.wav in Resources */,
+				C31CC4C8245F7BB700E462EE /* cello - medium d.wav in Resources */,
+				C31CC490245F7B8700E462EE /* banjo - short d.wav in Resources */,
+				C31CC4E2245F7BC600E462EE /* voice - medium e.wav in Resources */,
+				C31CC4CB245F7BB700E462EE /* cello - medium c.wav in Resources */,
+				C31CC4A5245F7B9400E462EE /* sax - short g.wav in Resources */,
+				C31CC4B5245F7BA200E462EE /* trumpet - medium c.wav in Resources */,
+				C31CC4C9245F7BB700E462EE /* cello - short a.wav in Resources */,
+				C31CC4E1245F7BC600E462EE /* voice - medium c.wav in Resources */,
+				C31CC4CA245F7BB700E462EE /* cello - medium g.wav in Resources */,
+				C31CC49F245F7B9400E462EE /* sax - medium d.wav in Resources */,
+				C31CC48D245F7B8700E462EE /* banjo - short g.wav in Resources */,
+				C31CC4B6245F7BA200E462EE /* trumpet - medium g.wav in Resources */,
+				C31CC48C245F7B8700E462EE /* banjo - medium g.wav in Resources */,
+				C31CC4A6245F7B9400E462EE /* sax - medium c.wav in Resources */,
+				C31CC4A0245F7B9400E462EE /* sax - medium g.wav in Resources */,
+				C31CC4E3245F7BC600E462EE /* voice - medium d.wav in Resources */,
+				C31CC4C6245F7BB700E462EE /* cello - short g.wav in Resources */,
+				C31CC4BB245F7BA200E462EE /* trumpet - short a.wav in Resources */,
+				C31CC4B8245F7BA200E462EE /* trumpet - short d.wav in Resources */,
 				AFA66B0424118D770002F732 /* LaunchScreen.storyboard in Resources */,
-				C3DF3655245E569900D738F6 /* sax - short c.wav in Resources */,
-				C3D59ED02457AC01004CFF34 /* voice - medium a.wav in Resources */,
-				C3D59ED92457AC01004CFF34 /* voice - medium d.wav in Resources */,
-				C3DA5F8B2459490200B35B9A /* cello - short a.wav in Resources */,
-				C3DA5F862459490200B35B9A /* cello - medium d.wav in Resources */,
-				C3DF3657245E569900D738F6 /* sax - short g.wav in Resources */,
-				C3DF3665245E579500D738F6 /* banjo - short a.wav in Resources */,
-				C3DF365A245E569900D738F6 /* sax - short e.wav in Resources */,
-				C3DF366E245E579500D738F6 /* banjo - short g.wav in Resources */,
-				C3D59ECF2457AC01004CFF34 /* voice - long c.wav in Resources */,
-				C3DF3667245E579500D738F6 /* banjo - medium e.wav in Resources */,
-				C3DA5F8E2459490200B35B9A /* cello - short d.wav in Resources */,
-				C3DF3659245E569900D738F6 /* sax - short a.wav in Resources */,
+				C31CC4A3245F7B9400E462EE /* sax - short a.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
