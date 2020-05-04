@@ -23,17 +23,6 @@ class Tree {
         node = SKSpriteNode(imageNamed: filename)
         self.filename = filename
         fruits = []
-        width = 0
-        height = 0
-        xPosition = 0
-        yPosition = 0
-        touches = []
-    }
-    
-    init(filename: String, width: Double, height: Double, xPosition: Double, yPosition: Double) {
-        node = SKSpriteNode(imageNamed: filename)
-        self.filename = filename
-        fruits = []
         self.width = 0
         self.height = 0
         self.xPosition = 0

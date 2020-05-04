@@ -19,25 +19,25 @@ class GameScene: SKScene {
     //declare all variables
     var HomeButton = SKSpriteNode()
     
-    var appleTree = Tree(filename: "appleTree", width: 300, height: 300, xPosition: 0, yPosition: 0)
-    var apple = Fruit(filename: "apple", width: 300, height: 300, xPosition: 0, yPosition: 0, musicName: "cello - medium a.wav")
-    var apple2 = Fruit(filename: "apple", width: 300, height: 300, xPosition: 0, yPosition: 0, musicName: "cello - medium c.wav")
+    var appleTree = Tree(filename: "appleTree")
+    var apple = Fruit(filename: "apple")
+    var apple2 = Fruit(filename: "apple")
     
-    var bananaTree = Tree(filename: "bananaTree", width: 300, height: 300, xPosition: 0, yPosition: 0)
-    var banana = Fruit(filename: "banana", width: 300, height: 300, xPosition: 0, yPosition: 0, musicName: "cello - medium a.wav")
-    var banana2 = Fruit(filename: "banana", width: 300, height: 300, xPosition: 0, yPosition: 0, musicName: "cello - medium c.wav")
+    var bananaTree = Tree(filename: "bananaTree")
+    var banana = Fruit(filename: "banana")
+    var banana2 = Fruit(filename: "banana")
     
-    var coconutTree = Tree(filename: "coconutTree", width: 300, height: 300, xPosition: 0, yPosition: 0)
-    var coconut = Fruit(filename: "coconut", width: 300, height: 300, xPosition: 0, yPosition: 0, musicName: "cello - medium a.wav")
-    var coconut2 = Fruit(filename: "coconut", width: 300, height: 300, xPosition: 0, yPosition: 0, musicName: "cello - medium c.wav")
+    var coconutTree = Tree(filename: "coconutTree")
+    var coconut = Fruit(filename: "coconut")
+    var coconut2 = Fruit(filename: "coconut")
     
-    var lemonTree = Tree(filename: "coconutTree", width: 300, height: 300, xPosition: 0, yPosition: 0)
-    var lemon = Fruit(filename: "lemon", width: 300, height: 300, xPosition: 0, yPosition: 0, musicName: "cello - medium a.wav")
-    var lemon2 = Fruit(filename: "lemon", width: 300, height: 300, xPosition: 0, yPosition: 0, musicName: "cello - medium c.wav")
+    var lemonTree = Tree(filename: "coconutTree")
+    var lemon = Fruit(filename: "lemon")
+    var lemon2 = Fruit(filename: "lemon")
     
-    var peachTree = Tree(filename: "peachTree", width: 300, height: 300, xPosition: 0, yPosition: 0)
-    var peach = Fruit(filename: "peach", width: 300, height: 300, xPosition: 0, yPosition: 0, musicName: "cello - medium a.wav")
-    var peach2 = Fruit(filename: "peach", width: 300, height: 300, xPosition: 0, yPosition: 0, musicName: "cello - medium c.wav")
+    var peachTree = Tree(filename: "peachTree")
+    var peach = Fruit(filename: "peach")
+    var peach2 = Fruit(filename: "peach")
     
     
 
@@ -84,6 +84,24 @@ class GameScene: SKScene {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch = touches.first!
         
+        if appleTree.node.contains(touch.location(in: apple.node)) {
+            run(Rhythm.generateRandomRhythm(instrument: "voice", numOfNotes: 5))
+            appleTree.deleteFruit(fruit: apple, number: 0)
+        }
+        if appleTree.node.contains(touch.location(in: apple2.node)) {
+            run(Rhythm.generateRandomRhythm(instrument: "voice", numOfNotes: 5))
+            appleTree.deleteFruit(fruit: apple, number: 1)
+        }
+        
+        if bananaTree.node.contains(touch.location(in: banana.node)) {
+            run(Rhythm.generateRandomRhythm(instrument: "banjo", numOfNotes: 5))
+            bananaTree.deleteFruit(fruit: banana, number: 0)
+        }
+        if bananaTree.node.contains(touch.location(in: banana2.node)) {
+            run(Rhythm.generateRandomRhythm(instrument: "banjo", numOfNotes: 5))
+            bananaTree.deleteFruit(fruit: banana, number: 1)
+        }
+        
         if coconutTree.node.contains(touch.location(in: coconut.node) ) {
             run(Rhythm.generateRandomRhythm(instrument: "cello", numOfNotes: 5))
             coconutTree.deleteFruit(fruit: coconut, number: 0)
@@ -92,41 +110,32 @@ class GameScene: SKScene {
             run(Rhythm.generateRandomRhythm(instrument: "cello", numOfNotes: 5))
             coconutTree.deleteFruit(fruit: coconut2, number: 1)
         }
-        if bananaTree.node.contains(touch.location(in: banana.node)) {
-            run(Rhythm.generateRandomRhythm(instrument: "banjo", numOfNotes: 5))
-            bananaTree.deleteFruit(fruit: banana, number: 0)
+        
+        if lemonTree.node.contains(touch.location(in: lemon.node)) {
+            run(Rhythm.generateRandomRhythm(instrument: "sax", numOfNotes: 5))
+            lemonTree.deleteFruit(fruit: lemon, number: 0)
+        }
+        if lemonTree.node.contains(touch.location(in: lemon2.node)) {
+            run(Rhythm.generateRandomRhythm(instrument: "sax", numOfNotes: 5))
+            lemonTree.deleteFruit(fruit: lemon, number: 1)
         }
         
         if peachTree.node.contains(touch.location(in: peach.node)) {
             run(Rhythm.generateRandomRhythm(instrument: "trumpet", numOfNotes: 5))
             peachTree.deleteFruit(fruit: peach, number: 0)
         }
-        
-        if lemonTree.node.contains(touch.location(in: lemon.node)) {
-            run(Rhythm.generateRandomRhythm(instrument: "sax", numOfNotes: 5))
-            lemonTree.deleteFruit(fruit: lemon, number: 0)
+        if peachTree.node.contains(touch.location(in: peach2.node)) {
+            run(Rhythm.generateRandomRhythm(instrument: "trumpet", numOfNotes: 5))
+            peachTree.deleteFruit(fruit: peach, number: 1)
         }
+
         
-        if appleTree.node.contains(touch.location(in: apple.node)) {
-            run(Rhythm.generateRandomRhythm(instrument: "voice", numOfNotes: 5))
-            appleTree.deleteFruit(fruit: apple, number: 0)
-        }
     }
     
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered
     }
 }
-
-
-//    SKAction.repeat(
-//        SKAction.sequence([
-//            SKAction.note(instrument: "voice", note: "a", duration: 0.4),
-//            SKAction.note(instrument: "voice", note: "d", duration: 0.2),
-//            SKAction.note(instrument: "voice", note: "d", duration: 0.2),
-//            SKAction.note(instrument: "voice", note: "d", duration: 0.2),
-//        ]),
-//        count: 5
 
     // You might end up writing other SKAction music methods like this:
     //
