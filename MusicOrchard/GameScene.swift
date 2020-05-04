@@ -85,48 +85,58 @@ class GameScene: SKScene {
         let touch = touches.first!
         
         if appleTree.node.contains(touch.location(in: apple.node)) {
-            run(Rhythm.generateRandomRhythm(instrument: "voice", numOfNotes: 5))
-            appleTree.deleteFruit(fruit: apple, number: 0)
+            run(Rhythm.generateRandomRhythm(instrument: "voice", numOfNotes: 5)) {
+                self.appleTree.deleteFruit(fruit: self.apple, number: 0)
+            }
         }
         if appleTree.node.contains(touch.location(in: apple2.node)) {
-            run(Rhythm.generateRandomRhythm(instrument: "voice", numOfNotes: 5))
-            appleTree.deleteFruit(fruit: apple, number: 1)
+            run(Rhythm.generateRandomRhythm(instrument: "voice", numOfNotes: 5)) {
+                self.appleTree.deleteFruit(fruit: self.apple, number: 1)
+            }
         }
         
         if bananaTree.node.contains(touch.location(in: banana.node)) {
-            run(Rhythm.generateRandomRhythm(instrument: "banjo", numOfNotes: 5))
-            bananaTree.deleteFruit(fruit: banana, number: 0)
+            run(Rhythm.generateRandomRhythm(instrument: "banjo", numOfNotes: 5)) {
+                self.bananaTree.deleteFruit(fruit: self.banana, number: 0)
+            }
         }
         if bananaTree.node.contains(touch.location(in: banana2.node)) {
-            run(Rhythm.generateRandomRhythm(instrument: "banjo", numOfNotes: 5))
-            bananaTree.deleteFruit(fruit: banana, number: 1)
+            run(Rhythm.generateRandomRhythm(instrument: "banjo", numOfNotes: 5)) {
+                self.bananaTree.deleteFruit(fruit: self.banana, number: 1)
+            }
         }
         
         if coconutTree.node.contains(touch.location(in: coconut.node) ) {
-            run(Rhythm.generateRandomRhythm(instrument: "cello", numOfNotes: 5))
-            coconutTree.deleteFruit(fruit: coconut, number: 0)
+            run(Rhythm.generateRandomRhythm(instrument: "cello", numOfNotes: 5)) {
+                self.coconutTree.deleteFruit(fruit: self.coconut, number: 0)
+            }
         }
         if coconutTree.node.contains(touch.location(in: coconut2.node) ) {
-            run(Rhythm.generateRandomRhythm(instrument: "cello", numOfNotes: 5))
-            coconutTree.deleteFruit(fruit: coconut2, number: 1)
+            run(Rhythm.generateRandomRhythm(instrument: "cello", numOfNotes: 5)) {
+                self.coconutTree.deleteFruit(fruit: self.coconut2, number: 1)
+            }
         }
         
         if lemonTree.node.contains(touch.location(in: lemon.node)) {
-            run(Rhythm.generateRandomRhythm(instrument: "sax", numOfNotes: 5))
-            lemonTree.deleteFruit(fruit: lemon, number: 0)
+            run(Rhythm.generateRandomRhythm(instrument: "sax", numOfNotes: 5)) {
+                self.lemonTree.deleteFruit(fruit: self.lemon, number: 0)
+            }
         }
         if lemonTree.node.contains(touch.location(in: lemon2.node)) {
-            run(Rhythm.generateRandomRhythm(instrument: "sax", numOfNotes: 5))
-            lemonTree.deleteFruit(fruit: lemon, number: 1)
+            run(Rhythm.generateRandomRhythm(instrument: "sax", numOfNotes: 5)) {
+                self.lemonTree.deleteFruit(fruit: self.lemon, number: 1)
+            }
         }
         
         if peachTree.node.contains(touch.location(in: peach.node)) {
-            run(Rhythm.generateRandomRhythm(instrument: "trumpet", numOfNotes: 5))
-            peachTree.deleteFruit(fruit: peach, number: 0)
+            run(Rhythm.generateRandomRhythm(instrument: "trumpet", numOfNotes: 5)) {
+                self.peachTree.deleteFruit(fruit: self.peach, number: 0)
+            }
         }
         if peachTree.node.contains(touch.location(in: peach2.node)) {
-            run(Rhythm.generateRandomRhythm(instrument: "trumpet", numOfNotes: 5))
-            peachTree.deleteFruit(fruit: peach, number: 1)
+            run(Rhythm.generateRandomRhythm(instrument: "trumpet", numOfNotes: 5)) {
+                self.peachTree.deleteFruit(fruit: self.peach, number: 1)
+            }
         }
 
         
