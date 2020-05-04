@@ -41,16 +41,5 @@ class Fruit {
         node.position = CGPoint(x: xPosition, y: yPosition)
     }
     
-    func getNode() -> SKSpriteNode {
-        return node
-    }
-    
-    func getSize() -> (Double, Double){
-        return (width, height)
-    }
-    
-    func getPosition() -> (Double, Double){
-        return (xPosition, yPosition)
-    }
     
 }
