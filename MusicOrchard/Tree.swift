@@ -36,7 +36,7 @@ class Tree {
         let number = Int.random(in: 1...5)
         fruit.setSize(width: 1000, height: 750)
         fruit.setPosition(xPosition: Double(-650 + (200 * number)), yPosition: -75)
-        fruit.node.zPosition = getNode().zPosition + 1
+        fruit.node.zPosition = node.zPosition + 1
         node.addChild(fruit.node)
         fruits.append(fruit)
     }
@@ -60,16 +60,5 @@ class Tree {
         node.position = CGPoint(x: xPosition, y: yPosition)
     }
 
-    func getNode() -> SKSpriteNode {
-        return node
-    }
-    
-    func getSize() -> (Double, Double){
-        return (width, height)
-    }
-    
-    func getPosition() -> (Double, Double){
-        return (xPosition, yPosition)
-    }
     
 }
