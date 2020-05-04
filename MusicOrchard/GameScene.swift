@@ -85,28 +85,30 @@ class GameScene: SKScene {
         let touch = touches.first!
         
         if coconutTree.node.contains(touch.location(in: coconut.node) ) {
-            coconut.playMusic()
+            run(Rhythm.generateRandomRhythm(instrument: "cello", numOfNotes: 5))
             coconutTree.deleteFruit(fruit: coconut, number: 0)
         }
         if coconutTree.node.contains(touch.location(in: coconut2.node) ) {
-            coconut2.playMusic()
+            run(Rhythm.generateRandomRhythm(instrument: "cello", numOfNotes: 5))
             coconutTree.deleteFruit(fruit: coconut2, number: 1)
         }
-
+        if bananaTree.node.contains(touch.location(in: banana.node)) {
+            run(Rhythm.generateRandomRhythm(instrument: "banjo", numOfNotes: 5))
+            bananaTree.deleteFruit(fruit: banana, number: 0)
+        }
+        
+        if peachTree.node.contains(touch.location(in: peach.node)) {
+            run(Rhythm.generateRandomRhythm(instrument: "trumpet", numOfNotes: 5))
+            peachTree.deleteFruit(fruit: peach, number: 0)
+        }
+        
+        if lemonTree.node.contains(touch.location(in: lemon.node)) {
+            run(Rhythm.generateRandomRhythm(instrument: "sax", numOfNotes: 5))
+            lemonTree.deleteFruit(fruit: lemon, number: 0)
+        }
         
         if appleTree.node.contains(touch.location(in: apple.node)) {
-            run(
-//                SKAction.repeat(
-//                    SKAction.sequence([
-//                        SKAction.note(instrument: "voice", note: "a", duration: 0.4),
-//                        SKAction.note(instrument: "voice", note: "d", duration: 0.2),
-//                        SKAction.note(instrument: "voice", note: "d", duration: 0.2),
-//                        SKAction.note(instrument: "voice", note: "d", duration: 0.2),
-//                    ]),
-//                    count: 5
-                Rhythm.generateRandomRhythm(instrument: "cello", numOfNotes: 5)
-                )
-//            );
+            run(Rhythm.generateRandomRhythm(instrument: "voice", numOfNotes: 5))
             appleTree.deleteFruit(fruit: apple, number: 0)
         }
     }
@@ -117,7 +119,15 @@ class GameScene: SKScene {
 }
 
 
-    
+//    SKAction.repeat(
+//        SKAction.sequence([
+//            SKAction.note(instrument: "voice", note: "a", duration: 0.4),
+//            SKAction.note(instrument: "voice", note: "d", duration: 0.2),
+//            SKAction.note(instrument: "voice", note: "d", duration: 0.2),
+//            SKAction.note(instrument: "voice", note: "d", duration: 0.2),
+//        ]),
+//        count: 5
+
     // You might end up writing other SKAction music methods like this:
     //
     // let appleRhythm = SKAction.rhythm(instrument: "voice", length: 5, pulse: 0.1)
