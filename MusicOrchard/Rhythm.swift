@@ -33,11 +33,9 @@ class Rhythm {
     }
     
     static func generateRandomRhythm(instrument: String, numOfNotes: Int) -> SKAction {
-        var randomRhythm = SKAction()
-        for _ in 1...numOfNotes {
-            randomRhythm = SKAction.sequence([randomRhythm, randomNote(instrument: instrument)])
-        }
-        return randomRhythm
+        SKAction.sequence((1...numOfNotes).map{(Int) -> SKAction in
+            randomNote(instrument: instrument)
+        })
     }
     
 }
