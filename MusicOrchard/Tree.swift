@@ -40,24 +40,26 @@ class Tree {
         while true {
             let number = Int.random(in: treeSpots.indices)
             if !treeSpots[number].occupied {
+                fruit.tree = self
                 fruit.spot = treeSpots[number]
                 treeSpots[number].fruit = fruit
                 treeSpots[number].occupied = true
                 let position = treeSpots[number].position
                 fruit.setPosition(xPosition: Double(position.x), yPosition: Double(position.y))
-                node.addChild(fruit.node)
+                node.addChild(fruit)
                 break
             }
         }
-        fruit.node.zPosition = node.zPosition + 1
+        fruit.zPosition = node.zPosition + 1
         fruit.grow()
     }
     
     func deleteFruit(fruit: Fruit) {
-        fruit.node.removeFromParent()
+        fruit.removeFromParent()
         fruit.spot?.occupied = false
         fruit.spot?.fruit = nil
         fruit.spot = nil
+        fruit.tree = nil
         grow(fruit: fruit)
     }
     

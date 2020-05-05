@@ -21,24 +21,24 @@ class GameScene: SKScene {
     var HomeButton = SKSpriteNode()
     
     var appleTree = Tree(filename: "appleTree")
-    var apple = Fruit(filename: "apple")
-    var apple2 = Fruit(filename: "apple")
+    var apple = Fruit(image: "apple", instrument: "banjo")
+    var apple2 = Fruit(image: "apple", instrument: "banjo")
     
     var bananaTree = Tree(filename: "bananaTree")
-    var banana = Fruit(filename: "banana")
-    var banana2 = Fruit(filename: "banana")
+    var banana = Fruit(image: "banana", instrument: "voice")
+    var banana2 = Fruit(image: "banana", instrument: "voice")
     
     var coconutTree = Tree(filename: "coconutTree")
-    var coconut = Fruit(filename: "coconut")
-    var coconut2 = Fruit(filename: "coconut")
+    var coconut = Fruit(image: "coconut", instrument: "cello")
+    var coconut2 = Fruit(image: "coconut", instrument: "cello")
     
     var lemonTree = Tree(filename: "lemonTree")
-    var lemon = Fruit(filename: "lemon")
-    var lemon2 = Fruit(filename: "lemon")
+    var lemon = Fruit(image: "lemon", instrument: "trumpet")
+    var lemon2 = Fruit(image: "lemon", instrument: "trumpet")
     
     var peachTree = Tree(filename: "peachTree")
-    var peach = Fruit(filename: "peach")
-    var peach2 = Fruit(filename: "peach")
+    var peach = Fruit(image: "peach", instrument: "sax")
+    var peach2 = Fruit(image: "peach", instrument: "sax")
     
     override func didMove(to view: SKView) {
         //foo
@@ -79,66 +79,6 @@ class GameScene: SKScene {
         
     }
 
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        let touch = touches.first!
-        
-        if appleTree.node.contains(touch.location(in: apple.node)) {
-            run(Rhythm.generateRandomRhythm(instrument: "banjo", numOfNotes: 5)) {
-                self.appleTree.deleteFruit(fruit: self.apple)
-            }
-        }
-        if appleTree.node.contains(touch.location(in: apple2.node)) {
-            run(Rhythm.generateRandomRhythm(instrument: "banjo", numOfNotes: 5)) {
-                self.appleTree.deleteFruit(fruit: self.apple)
-            }
-        }
-        
-        if bananaTree.node.contains(touch.location(in: banana.node)) {
-            run(Rhythm.generateRandomRhythm(instrument: "voice", numOfNotes: 5)) {
-                self.bananaTree.deleteFruit(fruit: self.banana)
-            }
-        }
-        if bananaTree.node.contains(touch.location(in: banana2.node)) {
-            run(Rhythm.generateRandomRhythm(instrument: "voice", numOfNotes: 5)) {
-                self.bananaTree.deleteFruit(fruit: self.banana)
-            }
-        }
-        
-        if coconutTree.node.contains(touch.location(in: coconut.node) ) {
-            run(Rhythm.generateRandomRhythm(instrument: "cello", numOfNotes: 5)) {
-                self.coconutTree.deleteFruit(fruit: self.coconut)
-            }
-        }
-        if coconutTree.node.contains(touch.location(in: coconut2.node) ) {
-            run(Rhythm.generateRandomRhythm(instrument: "cello", numOfNotes: 5)) {
-                self.coconutTree.deleteFruit(fruit: self.coconut2)
-            }
-        }
-        
-        if lemonTree.node.contains(touch.location(in: lemon.node)) {
-            run(Rhythm.generateRandomRhythm(instrument: "trumpet", numOfNotes: 5)) {
-                self.lemonTree.deleteFruit(fruit: self.lemon)
-            }
-        }
-        if lemonTree.node.contains(touch.location(in: lemon2.node)) {
-            run(Rhythm.generateRandomRhythm(instrument: "trumpet", numOfNotes: 5)) {
-                self.lemonTree.deleteFruit(fruit: self.lemon)
-            }
-        }
-        
-        if peachTree.node.contains(touch.location(in: peach.node)) {
-            run(Rhythm.generateRandomRhythm(instrument: "sax", numOfNotes: 5)) {
-                self.peachTree.deleteFruit(fruit: self.peach)
-            }
-        }
-        if peachTree.node.contains(touch.location(in: peach2.node)) {
-            run(Rhythm.generateRandomRhythm(instrument: "sax", numOfNotes: 5)) {
-                self.peachTree.deleteFruit(fruit: self.peach)
-            }
-        }
-
-        
-    }
     
     override func update(_ currentTime: TimeInterval) {
         // Called before each frame is rendered

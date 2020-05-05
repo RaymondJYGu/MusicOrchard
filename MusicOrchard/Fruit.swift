@@ -9,32 +9,47 @@
 import Foundation
 import SpriteKit
 
-class Fruit {
-    
-    var filename: String
-    var node: SKSpriteNode
+class Fruit : SKSpriteNode{
     var xPosition: Double
     var yPosition: Double
+    weak var tree: Tree?
     var spot: Spot? = nil
+    var instrument: String
 
-    
-    init(filename: String) {
-        node = SKSpriteNode(imageNamed: filename)
-        self.filename = filename
+    init(image: String, instrument: String) {
+        let texture = SKTexture(imageNamed: image)
+        self.tree = nil
         self.xPosition = 0
         self.yPosition = 0
+        self.instrument = instrument
+        super.init(texture: texture, color: .clear, size: texture.size())
+        isUserInteractionEnabled = true
         setPosition(xPosition: xPosition, yPosition: yPosition)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     func setPosition(xPosition: Double, yPosition: Double) {
         self.xPosition = xPosition
         self.yPosition = yPosition
-        node.position = CGPoint(x: xPosition, y: yPosition)
+        position = CGPoint(x: xPosition, y: yPosition)
     }
     
     func grow() {
-        node.setScale(0)
+        setScale(0)
         let scale = SKAction.scale(to: GameScene.imageScale, duration: 5)
-        self.node.run(scale)
+        run(scale)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        play()
+    }
+    
+    func play() {
+        run(Rhythm.generateRandomRhythm(instrument: self.instrument, numOfNotes: 5)) {
+            self.tree?.deleteFruit(fruit: self)
+        }
     }
 }
