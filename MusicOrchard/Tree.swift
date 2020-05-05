@@ -22,13 +22,11 @@ class Tree {
         Spot(position: CGPoint(x: -50, y: -50), occupied: false),
         Spot(position: CGPoint(x: 150, y: -30), occupied: false),
         Spot(position: CGPoint(x: 300, y: -100), occupied: false)]
-    var fruits: [Fruit]
     var touches: [Int]
     
     init(filename: String) {
         node = SKSpriteNode(imageNamed: filename)
         self.filename = filename
-        fruits = []
         self.width = 0
         self.height = 0
         self.xPosition = 0
@@ -38,18 +36,7 @@ class Tree {
         setPosition(xPosition: xPosition, yPosition: yPosition)
     }
     
-    func addFruit(fruit: Fruit) {
-        putFruitIntoDict(fruit: fruit)
-        setFruitSpot(fruit: fruit)
-        fruit.grow()
-    }
-    
-    func putFruitIntoDict(fruit: Fruit) {
-        fruit.node.zPosition = node.zPosition + 1
-        fruits.append(fruit)
-    }
-    
-    func setFruitSpot(fruit: Fruit) {
+    func grow(fruit: Fruit) {
         while true {
             let number = Int.random(in: treeSpots.indices)
             if !treeSpots[number].occupied {
@@ -62,16 +49,17 @@ class Tree {
                 break
             }
         }
+        fruit.node.zPosition = node.zPosition + 1
+        fruit.grow()
     }
     
     func deleteFruit(fruit: Fruit) {
-        node.removeChildren(in: [fruit.node])
+        fruit.node.removeFromParent()
         fruit.spot?.occupied = false
         fruit.spot?.fruit = nil
         fruit.spot = nil
-        setFruitSpot(fruit: fruit)
+        grow(fruit: fruit)
     }
-    
     
     func setSize(width: Double, height: Double) {
         node.scale(to: CGSize(width: width, height: height))
