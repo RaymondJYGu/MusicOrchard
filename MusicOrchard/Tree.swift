@@ -16,12 +16,12 @@ class Tree {
     var height: Double
     var xPosition: Double
     var yPosition: Double
-    let treeSpots: [Int : Spot] = [
-        1 : Spot(position: CGPoint(x: -300, y: -75), occupied: false),
-        2 : Spot(position: CGPoint(x: -250, y: -10), occupied: false),
-        3 : Spot(position: CGPoint(x: -50, y: -50), occupied: false),
-        4 : Spot(position: CGPoint(x: 150, y: -30), occupied: false),
-        5 : Spot(position: CGPoint(x: 300, y: -100), occupied: false)]
+    let treeSpots: [Spot] = [
+        Spot(position: CGPoint(x: -300, y: -75), occupied: false),
+        Spot(position: CGPoint(x: -250, y: -10), occupied: false),
+        Spot(position: CGPoint(x: -50, y: -50), occupied: false),
+        Spot(position: CGPoint(x: 150, y: -30), occupied: false),
+        Spot(position: CGPoint(x: 300, y: -100), occupied: false)]
     var fruits: [Fruit]
     var touches: [Int]
     
@@ -51,13 +51,13 @@ class Tree {
     
     func setFruitSpot(fruit: Fruit) {
         while true {
-            let number = Int.random(in: 1...5)
-            if !treeSpots[number]!.occupied {
+            let number = Int.random(in: treeSpots.indices)
+            if !treeSpots[number].occupied {
                 fruit.spot = treeSpots[number]
-                treeSpots[number]?.fruit = fruit
-                treeSpots[number]?.occupied = true
-                let position = treeSpots[number]?.position
-                fruit.setPosition(xPosition: Double(position!.x), yPosition: Double(position!.y))
+                treeSpots[number].fruit = fruit
+                treeSpots[number].occupied = true
+                let position = treeSpots[number].position
+                fruit.setPosition(xPosition: Double(position.x), yPosition: Double(position.y))
                 node.addChild(fruit.node)
                 break
             }
