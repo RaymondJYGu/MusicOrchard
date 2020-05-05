@@ -60,8 +60,12 @@ class Fruit : SKSpriteNode{
         run(vibration, withKey: "vibration")
         run(Rhythm.generateRandomRhythm(instrument: self.instrument, numOfNotes: 5)) {
             self.removeAction(forKey: "vibration")
-            self.isPlaying = false
-            self.tree?.deleteFruit(fruit: self)
+            let falling = SKAction.moveBy(x: 0, y: -5000, duration: 0.8)
+            falling.timingMode = .easeIn
+            self.run(falling){
+                self.isPlaying = false
+                self.tree?.deleteFruit(fruit: self)
+            }
         }
     }
 }
