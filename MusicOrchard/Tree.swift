@@ -51,20 +51,16 @@ class Tree {
     }
     
     func setFruitSpot(fruit: Fruit) {
-        var number = Int.random(in: 1...5)
-        var set = false
-        while !set {
-            if treeSpots[number]!.occupied {
-                number = Int.random(in: 1...5)
-            }
-            else {
+        while true {
+            let number = Int.random(in: 1...5)
+            if !treeSpots[number]!.occupied {
                 fruit.spot = treeSpots[number]
                 treeSpots[number]?.fruit = fruit
                 treeSpots[number]?.occupied = true
                 let position = treeSpots[number]?.position
                 fruit.setPosition(xPosition: Double(position!.x), yPosition: Double(position!.y))
                 node.addChild(fruit.node)
-                set = true
+                break
             }
         }
     }
