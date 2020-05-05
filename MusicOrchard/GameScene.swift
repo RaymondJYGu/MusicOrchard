@@ -86,56 +86,56 @@ class GameScene: SKScene {
         
         if appleTree.node.contains(touch.location(in: apple.node)) {
             run(Rhythm.generateRandomRhythm(instrument: "voice", numOfNotes: 5)) {
-                self.appleTree.deleteFruit(fruit: self.apple, number: 0)
+                self.appleTree.deleteFruit(fruit: self.apple)
             }
         }
         if appleTree.node.contains(touch.location(in: apple2.node)) {
             run(Rhythm.generateRandomRhythm(instrument: "voice", numOfNotes: 5)) {
-                self.appleTree.deleteFruit(fruit: self.apple, number: 1)
+                self.appleTree.deleteFruit(fruit: self.apple)
             }
         }
         
         if bananaTree.node.contains(touch.location(in: banana.node)) {
             run(Rhythm.generateRandomRhythm(instrument: "banjo", numOfNotes: 5)) {
-                self.bananaTree.deleteFruit(fruit: self.banana, number: 0)
+                self.bananaTree.deleteFruit(fruit: self.banana)
             }
         }
         if bananaTree.node.contains(touch.location(in: banana2.node)) {
             run(Rhythm.generateRandomRhythm(instrument: "banjo", numOfNotes: 5)) {
-                self.bananaTree.deleteFruit(fruit: self.banana, number: 1)
+                self.bananaTree.deleteFruit(fruit: self.banana)
             }
         }
         
         if coconutTree.node.contains(touch.location(in: coconut.node) ) {
             run(Rhythm.generateRandomRhythm(instrument: "cello", numOfNotes: 5)) {
-                self.coconutTree.deleteFruit(fruit: self.coconut, number: 0)
+                self.coconutTree.deleteFruit(fruit: self.coconut)
             }
         }
         if coconutTree.node.contains(touch.location(in: coconut2.node) ) {
             run(Rhythm.generateRandomRhythm(instrument: "cello", numOfNotes: 5)) {
-                self.coconutTree.deleteFruit(fruit: self.coconut2, number: 1)
+                self.coconutTree.deleteFruit(fruit: self.coconut2)
             }
         }
         
         if lemonTree.node.contains(touch.location(in: lemon.node)) {
             run(Rhythm.generateRandomRhythm(instrument: "sax", numOfNotes: 5)) {
-                self.lemonTree.deleteFruit(fruit: self.lemon, number: 0)
+                self.lemonTree.deleteFruit(fruit: self.lemon)
             }
         }
         if lemonTree.node.contains(touch.location(in: lemon2.node)) {
             run(Rhythm.generateRandomRhythm(instrument: "sax", numOfNotes: 5)) {
-                self.lemonTree.deleteFruit(fruit: self.lemon, number: 1)
+                self.lemonTree.deleteFruit(fruit: self.lemon)
             }
         }
         
         if peachTree.node.contains(touch.location(in: peach.node)) {
             run(Rhythm.generateRandomRhythm(instrument: "trumpet", numOfNotes: 5)) {
-                self.peachTree.deleteFruit(fruit: self.peach, number: 0)
+                self.peachTree.deleteFruit(fruit: self.peach)
             }
         }
         if peachTree.node.contains(touch.location(in: peach2.node)) {
             run(Rhythm.generateRandomRhythm(instrument: "trumpet", numOfNotes: 5)) {
-                self.peachTree.deleteFruit(fruit: self.peach, number: 1)
+                self.peachTree.deleteFruit(fruit: self.peach)
             }
         }
 

@@ -10,12 +10,14 @@ import Foundation
 import SpriteKit
 
 class Fruit {
+    
     var filename: String
     var node: SKSpriteNode
     var width: Double
     var height: Double
     var xPosition: Double
     var yPosition: Double
+    var spot: Spot? = nil
 
     
     init(filename: String) {
