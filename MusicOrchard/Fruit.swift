@@ -53,7 +53,13 @@ class Fruit : SKSpriteNode{
             return
         }
         isPlaying = true
+        let vibration = SKAction.repeatForever(
+            SKAction.sequence([
+                SKAction.rotate(toAngle: -0.15, duration: 0.1),
+                SKAction.rotate(toAngle: 0.15, duration: 0.1)]))
+        run(vibration, withKey: "vibration")
         run(Rhythm.generateRandomRhythm(instrument: self.instrument, numOfNotes: 5)) {
+            self.removeAction(forKey: "vibration")
             self.isPlaying = false
             self.tree?.deleteFruit(fruit: self)
         }
