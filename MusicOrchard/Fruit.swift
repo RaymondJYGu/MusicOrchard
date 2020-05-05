@@ -43,5 +43,8 @@ class Fruit {
         node.position = CGPoint(x: xPosition, y: yPosition)
     }
     
-    
+    func grow() {
+        let scale = SKAction.scale(by: 100, duration: 5)
+        self.node.run(scale)
+    }
 }

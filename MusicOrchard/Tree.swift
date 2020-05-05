@@ -17,11 +17,11 @@ class Tree {
     var xPosition: Double
     var yPosition: Double
     let treeSpots: [Int : Spot] = [
-        1 : Spot(position: CGPoint(x: -450, y: -75), occupied: false),
-        2 : Spot(position: CGPoint(x: -250, y: -75), occupied: false),
-        3 : Spot(position: CGPoint(x: -50, y: -75), occupied: false),
-        4 : Spot(position: CGPoint(x: 150, y: -75), occupied: false),
-        5 : Spot(position: CGPoint(x: 350, y: -75), occupied: false)]
+        1 : Spot(position: CGPoint(x: -300, y: -75), occupied: false),
+        2 : Spot(position: CGPoint(x: -250, y: -10), occupied: false),
+        3 : Spot(position: CGPoint(x: -50, y: -50), occupied: false),
+        4 : Spot(position: CGPoint(x: 150, y: -30), occupied: false),
+        5 : Spot(position: CGPoint(x: 300, y: -100), occupied: false)]
     var fruits: [Fruit]
     var touches: [Int]
     
@@ -41,10 +41,11 @@ class Tree {
     func addFruit(fruit: Fruit) {
         putFruitIntoDict(fruit: fruit)
         setFruitSpot(fruit: fruit)
+        fruit.grow()
     }
     
     func putFruitIntoDict(fruit: Fruit) {
-        fruit.setSize(width: 1000, height: 750)
+        fruit.setSize(width: 10, height: 7.5)
         fruit.node.zPosition = node.zPosition + 1
         fruits.append(fruit)
     }
@@ -88,8 +89,6 @@ class Tree {
         self.yPosition = yPosition
         node.position = CGPoint(x: xPosition, y: yPosition)
     }
-
-    
 }
 
 class Spot {
