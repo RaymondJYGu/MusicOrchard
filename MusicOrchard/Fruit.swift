@@ -15,6 +15,7 @@ class Fruit : SKSpriteNode{
     weak var tree: Tree?
     var spot: Spot? = nil
     var instrument: String
+    var isPlaying = false
 
     init(image: String, instrument: String) {
         let texture = SKTexture(imageNamed: image)
@@ -48,7 +49,12 @@ class Fruit : SKSpriteNode{
     }
     
     func play() {
+        if isPlaying {
+            return
+        }
+        isPlaying = true
         run(Rhythm.generateRandomRhythm(instrument: self.instrument, numOfNotes: 5)) {
+            self.isPlaying = false
             self.tree?.deleteFruit(fruit: self)
         }
     }
