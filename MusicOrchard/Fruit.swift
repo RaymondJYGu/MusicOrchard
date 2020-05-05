@@ -13,8 +13,6 @@ class Fruit {
     
     var filename: String
     var node: SKSpriteNode
-    var width: Double
-    var height: Double
     var xPosition: Double
     var yPosition: Double
     var spot: Spot? = nil
@@ -23,18 +21,9 @@ class Fruit {
     init(filename: String) {
         node = SKSpriteNode(imageNamed: filename)
         self.filename = filename
-        self.width = 0
-        self.height = 0
         self.xPosition = 0
         self.yPosition = 0
-        setSize(width: width, height: height)
         setPosition(xPosition: xPosition, yPosition: yPosition)
-    }
-    
-    func setSize(width: Double, height: Double) {
-        node.scale(to: CGSize(width: width, height: height))
-        self.width = width
-        self.height = height
     }
     
     func setPosition(xPosition: Double, yPosition: Double) {
@@ -44,7 +33,8 @@ class Fruit {
     }
     
     func grow() {
-        let scale = SKAction.scale(by: 100, duration: 5)
+        node.setScale(0)
+        let scale = SKAction.scale(to: GameScene.imageScale, duration: 5)
         self.node.run(scale)
     }
 }

@@ -45,7 +45,6 @@ class Tree {
     }
     
     func putFruitIntoDict(fruit: Fruit) {
-        fruit.setSize(width: 10, height: 7.5)
         fruit.node.zPosition = node.zPosition + 1
         fruits.append(fruit)
     }
