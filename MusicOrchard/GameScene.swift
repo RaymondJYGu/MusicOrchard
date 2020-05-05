@@ -15,6 +15,7 @@ import AVFoundation
 class BG: SKSpriteNode{ }
 
 class GameScene: SKScene {
+    static let imageScale: CGFloat = 0.25
     
     //declare all variables
     var HomeButton = SKSpriteNode()
@@ -39,9 +40,6 @@ class GameScene: SKScene {
     var peach = Fruit(filename: "peach")
     var peach2 = Fruit(filename: "peach")
     
-    
-
-    
     override func didMove(to view: SKView) {
         //foo
         let background = SKSpriteNode (imageNamed: "farm bg")
@@ -51,31 +49,31 @@ class GameScene: SKScene {
         
         appleTree.addFruit(fruit: apple)
         appleTree.addFruit(fruit: apple2)
-        appleTree.node.setScale(0.25)
+        appleTree.node.setScale(GameScene.imageScale)
         addChild(appleTree.node)
         appleTree.setPosition(xPosition: Double(frame.midX + 400), yPosition: Double(frame.midY - 100))
         
         bananaTree.addFruit(fruit: banana)
         bananaTree.addFruit(fruit: banana2)
-        bananaTree.node.setScale(0.25)
+        bananaTree.node.setScale(GameScene.imageScale)
         addChild(bananaTree.node)
         bananaTree.setPosition(xPosition: Double(frame.midX + 50), yPosition: Double(frame.midY - 150))
         
         coconutTree.addFruit(fruit: coconut)
         coconutTree.addFruit(fruit: coconut2)
-        coconutTree.node.setScale(0.25)
+        coconutTree.node.setScale(GameScene.imageScale)
         addChild(coconutTree.node)
         coconutTree.setPosition(xPosition: 300, yPosition: 200)
         
         lemonTree.addFruit(fruit: lemon)
         lemonTree.addFruit(fruit: lemon2)
-        lemonTree.node.setScale(0.25)
+        lemonTree.node.setScale(GameScene.imageScale)
         addChild(lemonTree.node)
         lemonTree.setPosition(xPosition: Double(frame.midX - 400), yPosition: Double(frame.midY + 100))
         
         peachTree.addFruit(fruit: peach)
         peachTree.addFruit(fruit: peach2)
-        peachTree.node.setScale(0.25)
+        peachTree.node.setScale(GameScene.imageScale)
         addChild(peachTree.node)
         peachTree.setPosition(xPosition: -100, yPosition: 200)
         
