@@ -15,7 +15,7 @@ import AVFoundation
 class BG: SKSpriteNode{ }
 
 class GameScene: SKScene {
-    static let imageScale: CGFloat = 0.25
+    static let imageScale: CGFloat = 0.3
     
     //declare all variables
     var HomeButton = SKSpriteNode()
@@ -63,19 +63,19 @@ class GameScene: SKScene {
         coconutTree.grow(fruit: coconut2)
         coconutTree.node.setScale(GameScene.imageScale)
         addChild(coconutTree.node)
-        coconutTree.setPosition(xPosition: 300, yPosition: 200)
+        coconutTree.setPosition(xPosition: 230, yPosition: 200)
         
         lemonTree.grow(fruit: lemon)
         lemonTree.grow(fruit: lemon2)
         lemonTree.node.setScale(GameScene.imageScale)
         addChild(lemonTree.node)
-        lemonTree.setPosition(xPosition: Double(frame.midX - 400), yPosition: Double(frame.midY + 100))
+        lemonTree.setPosition(xPosition: Double(frame.midX - 350), yPosition: Double(frame.midY - 200))
         
         peachTree.grow(fruit: peach)
         peachTree.grow(fruit: peach2)
         peachTree.node.setScale(GameScene.imageScale)
         addChild(peachTree.node)
-        peachTree.setPosition(xPosition: -100, yPosition: 200)
+        peachTree.setPosition(xPosition: -260, yPosition: 165)
         
     }
 
