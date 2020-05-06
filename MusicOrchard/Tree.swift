@@ -17,11 +17,11 @@ class Tree {
     var xPosition: Double
     var yPosition: Double
     let treeSpots: [Spot] = [
-        Spot(position: CGPoint(x: -300, y: -75), occupied: false),
-        Spot(position: CGPoint(x: -250, y: -10), occupied: false),
-        Spot(position: CGPoint(x: -50, y: -50), occupied: false),
-        Spot(position: CGPoint(x: 150, y: -30), occupied: false),
-        Spot(position: CGPoint(x: 300, y: -100), occupied: false)]
+        Spot(position: CGPoint(x: -300, y: 100), occupied: false),
+        Spot(position: CGPoint(x: -200, y: -5), occupied: false),
+        Spot(position: CGPoint(x: -50, y: 50), occupied: false),
+        Spot(position: CGPoint(x: 150, y: 0), occupied: false),
+        Spot(position: CGPoint(x: 300, y: 25), occupied: false)]
     var touches: [Int]
     
     init(filename: String) {
