@@ -56,11 +56,14 @@ class Tree {
     
     func deleteFruit(fruit: Fruit) {
         fruit.removeFromParent()
+        fruit.alpha = 1.0
         fruit.spot?.occupied = false
         fruit.spot?.fruit = nil
         fruit.spot = nil
         fruit.tree = nil
-        grow(fruit: fruit)
+        node.run(SKAction.wait(forDuration: 3)) {
+            self.grow(fruit: fruit)
+        }
     }
     
     func setSize(width: Double, height: Double) {
