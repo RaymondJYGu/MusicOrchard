@@ -18,10 +18,11 @@ class Tree {
     var yPosition: Double
     let treeSpots: [Spot] = [
         Spot(position: CGPoint(x: -300, y: 100), occupied: false),
-        Spot(position: CGPoint(x: -200, y: -5), occupied: false),
-        Spot(position: CGPoint(x: -50, y: 50), occupied: false),
-        Spot(position: CGPoint(x: 150, y: 0), occupied: false),
-        Spot(position: CGPoint(x: 300, y: 25), occupied: false)]
+        Spot(position: CGPoint(x: -200, y: -50), occupied: false),
+        Spot(position: CGPoint(x: -75, y: 0), occupied: false),
+        Spot(position: CGPoint(x: 150, y: -50), occupied: false),
+        Spot(position: CGPoint(x: 300, y: 25), occupied: false),
+        Spot(position: CGPoint(x: 0, y: 150), occupied: false)]
     var touches: [Int]
     
     init(filename: String) {
