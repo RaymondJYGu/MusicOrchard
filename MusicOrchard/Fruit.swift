@@ -62,7 +62,6 @@ class Fruit : SKSpriteNode{
             self.removeAction(forKey: "vibration")
             let falling = SKAction.moveBy(x: 0, y: -500, duration: 0.5)
             falling.timingMode = .easeIn
-            SKAction.rotate(toAngle: 0.0, duration: 0.05)
             self.run(falling){
                 self.run(SKAction.fadeOut(withDuration: 0.5)) {
                     self.isPlaying = false
