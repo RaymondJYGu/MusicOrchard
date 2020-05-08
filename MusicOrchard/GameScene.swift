@@ -95,7 +95,7 @@ class GameScene: SKScene {
         coconutTree.grow(fruit: coconut3)
         coconutTree.node.setScale(GameScene.imageScale)
         addChild(coconutTree.node)
-        coconutTree.setPosition(xPosition: 230, yPosition: 190)
+        coconutTree.setPosition(xPosition: 210, yPosition: 190)
         
         lemonTree.grow(fruit: lemon)
         lemonTree.grow(fruit: lemon2)
