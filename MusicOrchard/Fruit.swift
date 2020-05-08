@@ -40,6 +40,7 @@ class Fruit : SKSpriteNode{
     
     func grow() {
         setScale(0)
+        zRotation = CGFloat(Double.random(in: 0...2*Double.pi))
         let scale = SKAction.scale(to: GameScene.imageScale * 0.8, duration: 5)
         run(scale)
     }
