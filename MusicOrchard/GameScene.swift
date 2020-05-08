@@ -25,7 +25,7 @@ class GameScene: SKScene {
     var apple2 = Fruit(image: "apple", instrument: "banjo")
     var apple3 = Fruit(image: "apple", instrument: "banjo")
     
-    var bananaTree = Tree(filename: "bananaTree")
+    var bananaTree = Tree(filename: "coconutTree")
     var banana = Fruit(image: "banana", instrument: "voice")
     var banana2 = Fruit(image: "banana", instrument: "voice")
     var banana3 = Fruit(image: "banana", instrument: "voice")
