@@ -20,8 +20,8 @@ class GameScene: SKScene {
     
     var activated = false
     var isWorking = false
-    var instructionButton = SKSpriteNode(imageNamed: "instructionButton")
-    var instruction = SKSpriteNode(imageNamed: "instruction")
+    var instructionButton = SKSpriteNode(imageNamed: "InstructionButton")
+    var instruction = SKSpriteNode(imageNamed: "Instruction")
     
     var appleTree = Tree(filename: "appleTree")
     var apple = Fruit(image: "apple", instrument: "banjo")

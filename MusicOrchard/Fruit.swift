@@ -40,7 +40,7 @@ class Fruit : SKSpriteNode{
     
     func grow() {
         setScale(0)
-        zRotation = CGFloat(Double.random(in: 0...2*Double.pi))
+        zRotation = CGFloat(Double.random(in: -Double.pi/4...Double.pi/4))
         let scale = SKAction.sequence([
             SKAction.scale(to: GameScene.imageScale * 0.9, duration: 1),
             SKAction.scale(to: GameScene.imageScale * 0.8, duration: 0.2),
@@ -60,7 +60,7 @@ class Fruit : SKSpriteNode{
         let lightswitch = SKAction.repeatForever(
             SKAction.sequence([
                 SKAction.colorize(with: UIColor.black, colorBlendFactor: 0.1, duration: 0.5),
-                SKAction.colorize(withColorBlendFactor: 0.2, duration: 0.5)]))
+                SKAction.colorize(with: UIColor.white, colorBlendFactor: 0.1, duration: 0.5)]))
         let vibration = SKAction.repeatForever(
             SKAction.sequence([
                 SKAction.rotate(byAngle: -0.2, duration: 0.1),
