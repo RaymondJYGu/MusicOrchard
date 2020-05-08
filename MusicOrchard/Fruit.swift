@@ -58,7 +58,7 @@ class Fruit : SKSpriteNode{
                 SKAction.rotate(toAngle: -0.2, duration: 0.1),
                 SKAction.rotate(toAngle: 0.2, duration: 0.1)]))
         run(vibration, withKey: "vibration")
-        run(SKAction.repeat(Rhythm.generateRandomRhythm(instrument: self.instrument, numOfNotes: Int.random(in: 2...3)), count: Int.random(in: 2...4))) {
+        run(SKAction.repeat(Rhythm.generateRandomRhythm(instrument: self.instrument, numOfNotes: 3), count: 3)) {
             self.removeAction(forKey: "vibration")
             let falling = SKAction.moveBy(x: 0, y: -500, duration: 0.5)
             falling.timingMode = .easeIn
