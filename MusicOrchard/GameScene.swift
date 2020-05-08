@@ -20,8 +20,8 @@ class GameScene: SKScene {
     
     var activated = false
     var isWorking = false
-    var instructionButton = SKSpriteNode(imageNamed: "instructionButton")
-    var instruction = SKSpriteNode(imageNamed: "instruction")
+    var instructionButton = SKSpriteNode(imageNamed: "InstructionButton")
+    var instruction = SKSpriteNode(imageNamed: "Instruction")
     
     var appleTree = Tree(filename: "appleTree")
     var apple = Fruit(image: "apple", instrument: "banjo")
@@ -70,24 +70,29 @@ class GameScene: SKScene {
         let peachRoot = SKSpriteNode (imageNamed: "hole1")
         
         appleTree.node.addChild(appleRoot)
-        appleRoot.position = CGPoint(x: 10, y: -650)
-        appleRoot.setScale(0.7)
+        appleRoot.position = CGPoint(x: 0, y: -640)
+        appleRoot.setScale(1.3)
+        appleRoot.zPosition = 1
         
         bananaTree.node.addChild(bananaRoot)
-        bananaRoot.position = CGPoint(x: -40, y: -740)
-        bananaRoot.setScale(0.7)
+        bananaRoot.position = CGPoint(x: -70, y: -720)
+        bananaRoot.setScale(1.3)
+        bananaRoot.zPosition = 1
         
         coconutTree.node.addChild(coconutRoot)
-        coconutRoot.position = CGPoint(x: -30, y: -730)
-        coconutRoot.setScale(0.7)
+        coconutRoot.position = CGPoint(x: -100, y: -730)
+        coconutRoot.setScale(1.3)
+        coconutRoot.zPosition = 1
         
         lemonTree.node.addChild(lemonRoot)
         lemonRoot.position = CGPoint(x: 10, y: -680)
-        lemonRoot.setScale(0.7)
+        lemonRoot.setScale(1.3)
+        lemonRoot.zPosition = 1
         
         peachTree.node.addChild(peachRoot)
-        peachRoot.position = CGPoint(x: 10, y: -565)
-        peachRoot.setScale(0.7)
+        peachRoot.position = CGPoint(x: -30, y: -550)
+        peachRoot.setScale(1.3)
+        peachRoot.zPosition = 1
         
         appleTree.grow(fruit: apple)
         appleTree.grow(fruit: apple2)

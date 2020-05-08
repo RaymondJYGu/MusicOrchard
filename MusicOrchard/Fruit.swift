@@ -59,7 +59,7 @@ class Fruit : SKSpriteNode{
         isPlaying = true
         let lightswitch = SKAction.repeatForever(
             SKAction.sequence([
-                SKAction.colorize(with: UIColor.black, colorBlendFactor: 0.1, duration: 0.5),
+                SKAction.colorize(with: UIColor.gray, colorBlendFactor: 0.1, duration: 0.5),
                 SKAction.colorize(with: UIColor.white, colorBlendFactor: 0.1, duration: 0.5)]))
         let vibration = SKAction.repeatForever(
             SKAction.sequence([
