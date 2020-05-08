@@ -41,6 +41,17 @@ class Tree {
         while true {
             let number = Int.random(in: treeSpots.indices)
             if !treeSpots[number].occupied {
+                if (number % 2 == 0) {
+                    fruit.run(SKAction.colorize(with: UIColor.black, colorBlendFactor: 0.2, duration: 0.1))
+                    fruit.tree = self
+                    fruit.spot = treeSpots[number]
+                    treeSpots[number].fruit = fruit
+                    treeSpots[number].occupied = true
+                    let position = treeSpots[number].position
+                    fruit.setPosition(xPosition: Double(position.x), yPosition: Double(position.y))
+                    node.addChild(fruit)
+                    break
+                }
                 fruit.tree = self
                 fruit.spot = treeSpots[number]
                 treeSpots[number].fruit = fruit
