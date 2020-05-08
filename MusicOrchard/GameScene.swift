@@ -18,6 +18,10 @@ class GameScene: SKScene {
     //declare all variables
     var HomeButton = SKSpriteNode()
     
+    var activated = false
+    var instructionButton = SKSpriteNode(imageNamed: "apple")
+    var instruction = SKSpriteNode(imageNamed: "banana")
+    
     var appleTree = Tree(filename: "appleTree")
     var apple = Fruit(image: "apple", instrument: "banjo")
     var apple2 = Fruit(image: "apple", instrument: "banjo")
@@ -49,6 +53,14 @@ class GameScene: SKScene {
         background.position = CGPoint(x: 0, y: 0)
         background.zPosition = -1
         addChild(background)
+        
+        instructionButton.setScale(0.1)
+        instructionButton.position = CGPoint(x: frame.minX + 0.5 * instructionButton.size.width, y: frame.maxY - 0.5 * instructionButton.size.height)
+        addChild(instructionButton)
+        
+        instruction.setScale(0.1)
+        instruction.position = CGPoint(x: 0, y: 20)
+        instruction.zPosition = 1000
         
         let appleRoot = SKSpriteNode (imageNamed: "hole1")
         let bananaRoot = SKSpriteNode (imageNamed: "hole1")
@@ -110,6 +122,19 @@ class GameScene: SKScene {
         peachTree.node.setScale(GameScene.imageScale)
         addChild(peachTree.node)
         peachTree.setPosition(xPosition: -200, yPosition: 165)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let touch = touches.first!
+        if instructionButton.contains(touch.location(in: self)) {
+            if(!activated) {
+                addChild(instruction)
+            }
+            else {
+                instruction.removeFromParent()
+            }
+            activated = !activated
+        }
     }
     
     override func update(_ currentTime: TimeInterval) {
