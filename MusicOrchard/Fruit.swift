@@ -53,13 +53,20 @@ class Fruit : SKSpriteNode{
             return
         }
         isPlaying = true
+        let lightswitch = SKAction.repeatForever(
+            SKAction.sequence([
+                SKAction.colorize(with: UIColor.black, colorBlendFactor: 0.1, duration: 0.5),
+                SKAction.colorize(withColorBlendFactor: 0.2, duration: 0.5)]))
         let vibration = SKAction.repeatForever(
             SKAction.sequence([
                 SKAction.rotate(toAngle: -0.2, duration: 0.1),
                 SKAction.rotate(toAngle: 0.2, duration: 0.1)]))
+        run(lightswitch, withKey: "lightswitch")
         run(vibration, withKey: "vibration")
         run(SKAction.repeat(Rhythm.generateRandomRhythm(instrument: self.instrument, numOfNotes: 3), count: 3)) {
             self.removeAction(forKey: "vibration")
+            self.removeAction(forKey: "lightswitch")
+            self.run(SKAction.colorize(withColorBlendFactor: 0, duration: 0.1))
             let falling = SKAction.moveBy(x: 0, y: -500, duration: 0.5)
             falling.timingMode = .easeIn
             self.run(falling){
