@@ -20,8 +20,8 @@ class GameScene: SKScene {
     
     var activated = false
     var isWorking = false
-    var instructionButton = SKSpriteNode(imageNamed: "InstructionButton")
-    var instruction = SKSpriteNode(imageNamed: "Instruction")
+    var instructionButton = SKSpriteNode(imageNamed: "instructionButton")
+    var instruction = SKSpriteNode(imageNamed: "instruction")
     
     var appleTree = Tree(filename: "appleTree")
     var apple = Fruit(image: "apple", instrument: "banjo")
@@ -134,7 +134,7 @@ class GameScene: SKScene {
                     instruction.alpha = 0
                     instruction.position = CGPoint(x: instructionButton.position.x + instructionButton.size.width, y: instructionButton.position.y)
                         addChild(instruction)
-                        instruction.run(SKAction.moveBy(x: 50, y: 0, duration: 0.5))
+                        instruction.run(SKAction.moveBy(x: 200, y: 0, duration: 0.5))
                         instruction.run(SKAction.fadeIn(withDuration: 1))
                     activated = !activated
                     isWorking = false
