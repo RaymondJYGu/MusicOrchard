@@ -52,6 +52,16 @@ class GameScene: SKScene {
         background.zPosition = -1
         addChild(background)
         
+        let appleRoot = SKSpriteNode (imageNamed: "hole1")
+        let bananaRoot = SKSpriteNode (imageNamed: "hole1")
+        let coconutRoot = SKSpriteNode (imageNamed: "hole1")
+        let lemonRoot = SKSpriteNode (imageNamed: "hole1")
+        let peachRoot = SKSpriteNode (imageNamed: "hole1")
+        
+        
+        
+        
+        
         appleTree.grow(fruit: apple)
         appleTree.grow(fruit: apple2)
         appleTree.grow(fruit: apple3)
@@ -78,14 +88,35 @@ class GameScene: SKScene {
         lemonTree.grow(fruit: lemon3)
         lemonTree.node.setScale(GameScene.imageScale)
         addChild(lemonTree.node)
-        lemonTree.setPosition(xPosition: Double(frame.midX - 350), yPosition: Double(frame.midY - 200))
+        lemonTree.setPosition(xPosition: Double(frame.midX - 350), yPosition: Double(frame.midY - 150))
         
         peachTree.grow(fruit: peach)
         peachTree.grow(fruit: peach2)
         peachTree.grow(fruit: peach3)
         peachTree.node.setScale(GameScene.imageScale)
         addChild(peachTree.node)
-        peachTree.setPosition(xPosition: -260, yPosition: 165)
+        peachTree.setPosition(xPosition: -200, yPosition: 165)
+        
+        appleTree.node.addChild(appleRoot)
+        appleRoot.position = CGPoint(x: frame.midX+10, y: frame.midY-650)
+        appleRoot.setScale(0.7)
+        
+        bananaTree.node.addChild(bananaRoot)
+        bananaRoot.position = CGPoint(x: frame.midX-30, y: frame.midY-740)
+        bananaRoot.setScale(0.7)
+        
+        coconutTree.node.addChild(coconutRoot)
+        coconutRoot.position = CGPoint(x: frame.midX-30, y: frame.midY-730)
+        coconutRoot.setScale(0.7)
+        
+        lemonTree.node.addChild(lemonRoot)
+        lemonRoot.position = CGPoint(x: frame.midX+15, y: frame.midY-710)
+        lemonRoot.setScale(0.7)
+        
+        peachTree.node.addChild(peachRoot)
+        peachRoot.position = CGPoint(x: frame.midX+10, y: frame.midY-570)
+        peachRoot.setScale(0.7)
+        
         
     }
 
