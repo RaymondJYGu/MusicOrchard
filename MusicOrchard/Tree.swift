@@ -62,7 +62,7 @@ class Tree {
                 break
             }
         }
-        fruit.zPosition = node.zPosition + 1
+        fruit.zPosition = node.zPosition + 1000
         fruit.grow()
     }
     
