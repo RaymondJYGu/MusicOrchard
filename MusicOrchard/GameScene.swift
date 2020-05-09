@@ -20,8 +20,8 @@ class GameScene: SKScene {
     
     var activated = false
     var isWorking = false
-    var instructionButton = SKSpriteNode(imageNamed: "InstructionButton")
-    var instruction = SKSpriteNode(imageNamed: "Instruction")
+    var instructionButton = SKSpriteNode(imageNamed: "help icon")
+    var instruction = SKSpriteNode(imageNamed: "instructions blue")
     
     var appleTree = Tree(filename: "appleTree")
     var apple = Fruit(image: "apple", instrument: "banjo")
@@ -56,7 +56,7 @@ class GameScene: SKScene {
         addChild(background)
         
         instructionButton.setScale(1)
-        instructionButton.position = CGPoint(x: frame.minX + 0.5 * instructionButton.size.width, y: frame.maxY - 0.5 * instructionButton.size.height)
+        instructionButton.position = CGPoint(x: frame.minX + 0.6 * instructionButton.size.width, y: frame.maxY - 0.6 * instructionButton.size.height)
         addChild(instructionButton)
         
         instruction.setScale(1)
@@ -142,14 +142,14 @@ class GameScene: SKScene {
                     instruction.alpha = 0
                     instruction.position = CGPoint(x: instructionButton.position.x + instructionButton.size.width, y: instructionButton.position.y)
                         addChild(instruction)
-                        instruction.run(SKAction.moveBy(x: 200, y: 0, duration: 0.5))
-                        instruction.run(SKAction.fadeIn(withDuration: 1))
+                        instruction.run(SKAction.moveBy(x: 165, y: 0, duration: 0.5))
+                    instruction.run(SKAction.fadeIn(withDuration: 0.5))
                     activated = !activated
                     isWorking = false
                 }
                 else {
-                    instruction.run(SKAction.moveBy(x: -50, y: 0, duration: 0.5))
-                    instruction.run(SKAction.fadeOut(withDuration: 1)) {
+                    instruction.run(SKAction.moveBy(x: -25, y: 0, duration: 0.5))
+                    instruction.run(SKAction.fadeOut(withDuration: 0.25)) {
                         self.instruction.removeFromParent()
                         self.activated = !self.activated
                         self.isWorking = false
