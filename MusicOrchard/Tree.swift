@@ -23,7 +23,6 @@ class Tree {
         Spot(position: CGPoint(x: 150, y: -50), occupied: false),
         Spot(position: CGPoint(x: 300, y: 25), occupied: false),
         Spot(position: CGPoint(x: 0, y: 150), occupied: false)]
-    var touches: [Int]
     
     init(filename: String) {
         node = SKSpriteNode(imageNamed: filename)
@@ -32,7 +31,6 @@ class Tree {
         self.height = 0
         self.xPosition = 0
         self.yPosition = 0
-        touches = []
         setSize(width: width, height: height)
         setPosition(xPosition: xPosition, yPosition: yPosition)
     }

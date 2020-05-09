@@ -10,8 +10,6 @@
 		820E8F1C245638310062533A /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820E8F1A245638300062533A /* Fruit.swift */; };
 		820E8F1D245638310062533A /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 820E8F1B245638300062533A /* Tree.swift */; };
 		821FE2C6245F7D01001A538A /* Rhythm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821FE2C5245F7D01001A538A /* Rhythm.swift */; };
-		823F61FA2460C0AB00738A83 /* TestScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823F61F82460C0AB00738A83 /* TestScene.swift */; };
-		823F61FB2460C0AB00738A83 /* TestScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 823F61F92460C0AB00738A83 /* TestScene.sks */; };
 		AFA66AF424118D750002F732 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA66AF324118D750002F732 /* AppDelegate.swift */; };
 		AFA66AF624118D750002F732 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = AFA66AF524118D750002F732 /* GameScene.sks */; };
 		AFA66AFA24118D750002F732 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA66AF924118D750002F732 /* GameScene.swift */; };
@@ -94,8 +92,6 @@
 		820E8F1A245638300062533A /* Fruit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
 		820E8F1B245638300062533A /* Tree.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tree.swift; sourceTree = "<group>"; };
 		821FE2C5245F7D01001A538A /* Rhythm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rhythm.swift; sourceTree = "<group>"; };
-		823F61F82460C0AB00738A83 /* TestScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestScene.swift; sourceTree = "<group>"; };
-		823F61F92460C0AB00738A83 /* TestScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TestScene.sks; sourceTree = "<group>"; };
 		AFA66AF024118D750002F732 /* MusicOrchard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusicOrchard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFA66AF324118D750002F732 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFA66AF524118D750002F732 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -214,8 +210,6 @@
 				C3E3EB5E244502B500D252F5 /* Resources */,
 				AFA66AF324118D750002F732 /* AppDelegate.swift */,
 				AFA66AF524118D750002F732 /* GameScene.sks */,
-				823F61F92460C0AB00738A83 /* TestScene.sks */,
-				823F61F82460C0AB00738A83 /* TestScene.swift */,
 				AFA66AF924118D750002F732 /* GameScene.swift */,
 				AFA66AFB24118D750002F732 /* GameViewController.swift */,
 				820E8F1B245638300062533A /* Tree.swift */,
@@ -496,7 +490,6 @@
 				C31CC48C245F7B8700E462EE /* banjo - medium g.wav in Resources */,
 				C31CC4A6245F7B9400E462EE /* sax - medium c.wav in Resources */,
 				C31CC4A0245F7B9400E462EE /* sax - medium g.wav in Resources */,
-				823F61FB2460C0AB00738A83 /* TestScene.sks in Resources */,
 				C31CC4E3245F7BC600E462EE /* voice - medium d.wav in Resources */,
 				C31CC4C6245F7BB700E462EE /* cello - short g.wav in Resources */,
 				C31CC4BB245F7BA200E462EE /* trumpet - short a.wav in Resources */,
@@ -530,7 +523,6 @@
 				820E8F1D245638310062533A /* Tree.swift in Sources */,
 				820E8F1C245638310062533A /* Fruit.swift in Sources */,
 				AFA66AFA24118D750002F732 /* GameScene.swift in Sources */,
-				823F61FA2460C0AB00738A83 /* TestScene.swift in Sources */,
 				821FE2C6245F7D01001A538A /* Rhythm.swift in Sources */,
 				AFA66AFC24118D750002F732 /* GameViewController.swift in Sources */,
 				AFA66AF424118D750002F732 /* AppDelegate.swift in Sources */,

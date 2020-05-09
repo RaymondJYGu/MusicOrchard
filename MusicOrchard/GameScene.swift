@@ -8,15 +8,9 @@
 
 import SpriteKit
 import GameplayKit
-import AVFoundation
-
-class BG: SKSpriteNode{ }
 
 class GameScene: SKScene {
     static let imageScale: CGFloat = 0.3
-    
-    //declare all variables
-    var HomeButton = SKSpriteNode()
     
     var activated = false
     var isWorking = false

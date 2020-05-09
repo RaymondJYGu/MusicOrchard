@@ -15,13 +15,6 @@ class Rhythm {
     static let lengths = ["medium", "short"]
     static let notes = ["a", "c", "d", "e", "g"]
     
-    static func note(instrument: String, length: String, note: String, duration: TimeInterval) -> SKAction {
-        SKAction.sequence([
-            SKAction.playSoundFileNamed("\(instrument) - \(length) \(note).wav", waitForCompletion: false),
-            SKAction.wait(forDuration: duration)
-        ])
-    }
-    
     static func randomNote(instrument: String) -> SKAction {
 //        let length = lengths[Int.random(in: 0...1)]
         let note = notes[Int.random(in: 0...4)]
